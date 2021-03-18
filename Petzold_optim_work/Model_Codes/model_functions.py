@@ -3,7 +3,6 @@
 Miscellaneous model functions
 """
 import numpy as np
-import parameters as p
 from scipy import interpolate
 
 #%%
@@ -12,7 +11,7 @@ from scipy import interpolate
 # t: time vector
 # input_data: experimental data used for the neuronal input functions
 # location: for use inside a function ('in function') or an array for use outside of a function ('out function')
-def input_P(t, input_data, location):  
+def input_P(p,t, input_data, location):  
     
     if p.InputCase == 'SquarePulse' or p.InputCase == 'Inhibitory': # Square pulse
         startpulse_end = p.startpulse + p.lengthpulse
@@ -38,7 +37,7 @@ def input_P(t, input_data, location):
 # t: time vector
 # input_data: experimental data used for the neuronal input functions
 # location: for use inside a function ('in function') or an array for use outside of a function ('out function')
-def input_Q(t, input_data, location):   
+def input_Q(p,t, input_data, location):   
     
     if p.InputCase == 'SquarePulse' or p.InputCase == 'Inhibitory':  # Square pulse
         startpulse_end = p.startpulse + p.lengthpulse
@@ -66,7 +65,7 @@ def input_Q(t, input_data, location):
 # input_data: experimental data used for the neuronal input functions
 # location: for use inside a function ('in function') or an array for use outside of a function ('out function')
 # total_waveform: an array containing the fast triangular input pulses
-def input_T(t, input_data, total_waveform, location): 
+def input_T(p,t, input_data, total_waveform, location): 
     
     if p.InputCase == 'ThalamicTrianglesZheng':       # Multiple fast triangular input scaled by Zheng data
         if location == 'in function':
@@ -95,7 +94,7 @@ def input_T(t, input_data, total_waveform, location):
     return T  
 
 # Creates an array of the fast triangular pulses, returns total_waveform which is used in input_T function
-def T_pulses():
+def T_pulses(p):
     # Thalamic input: multiple fast triangular pulses (total_waveform) scaled by Zheng data (interp_neural_wh)
     if p.InputCase == 'ThalamicTriangles' or p.InputCase == 'ThalamicTrianglesZheng': # Model with InputCase (Pinto et al) input - triangles for thalamic input T(t), overwrites input_data
         # Parameters

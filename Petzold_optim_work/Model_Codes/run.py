@@ -73,7 +73,7 @@ del start_time, solve_time
 v = initialise_var_names(u, idx, 'out function')
 
 # Extract the algebraic variables for easy plotting etc
-a = set_algebraic_variables(u, t, idx, input_data, total_waveform, 'out function')
+a = set_algebraic_variables(u, t, idx, input_data, total_waveform, 'out function',0)
 del total_waveform, input_data
 
 # Solve for the normalised CBF, CBV, CMRO2, HbO, HbR, HbT and BOLD and put into 'a' (solved separately from odeint as they depend on the steady state conditions)

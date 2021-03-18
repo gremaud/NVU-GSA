@@ -4,13 +4,12 @@ Normalised BOLD and hemodynamics
 """
 
 import numpy as np
-import parameters as p
 
 # Returns the class 'a' with added normalised variables that depend on the steady state conditions
 # a: class containing the algebraic variables
 # v: class containing the state variables
 # t: time vector
-def solve_normalised_hemodynamics(a,v,t):
+def solve_normalised_hemodynamics(p,a,v,t):
     
     # Find the index for a time right before the start of stimulation
     if p.startpulse < p.Tend:

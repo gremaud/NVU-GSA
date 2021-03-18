@@ -5,7 +5,6 @@ Import the matlab data files
 
 from scipy import io, interpolate, stats
 import numpy as np
-import parameters as p
 import matplotlib.pyplot as plt
 from scipy.stats import ttest_ind_from_stats
 
@@ -16,7 +15,7 @@ class Data():
 '''Import the Zheng 2010 neural input data'''
 # Returns input_data, an array used for InputCase = 'ZhengData', 'ThalamicTrianglesZheng' or 'ZhengFittedParams' for scaling the neuronal stimulus input functions P, Q or T. Based on experimental data from Zheng 2010
 # t: time vector
-def import_Zheng_neural_data(t):
+def import_Zheng_neural_data(p,t):
  
     # If the neuronal stimulation input profile is found from experimental data:
     if p.InputCase == 'ZhengData' or p.InputCase == 'ThalamicTrianglesZheng' or p.InputCase == 'ZhengFittedParams':
@@ -71,7 +70,7 @@ def import_Zheng_neural_data(t):
 # fig - figure of the averaged CBF data
 # cbf_time - time variable
 # cbf_Zheng - CBF variable
-def import_Zheng_cbf_data():
+def import_Zheng_cbf_data(p):
  
     # If the neuronal stimulation input profile is found from experimental data:
     if p.InputCase == 'ZhengData' or p.InputCase == 'ThalamicTrianglesZheng' or p.InputCase == 'ZhengFittedParams':
@@ -390,7 +389,7 @@ def import_Berwick_LNAME_7NI_data(area='All'):
 # TODO: change to match new data
 # Returns the 3 time variables and 3 hemodynamic variables
 # d: class containing the experimental data 
-def set_corresponding_LNAME_7NI_experimental_data(d):
+def set_corresponding_LNAME_7NI_experimental_data(p,d):
     
     time_LNAME = d.time_LNAME 
     
@@ -690,7 +689,7 @@ def import_Berwick_hemo_AirOxyData(area='All'):
 # area - choose from: 'All', 'Whisker', 'Artery', 'Vein', 'Parenchyma'. Default = 'All'
 def import_Berwick_HET_LNAME_Data(dataset, area='All'):
 
-    mat = io.loadmat('./mat_files/'+ dataset + '.mat')
+    mat = io.loadmat('./Model_Codes/mat_files/'+ dataset + '.mat')
     
     # 4 = regions from where the responses are from (1 = whisker region, 2 = Artery, 3 = Vein, 4 = Parenchyma)
     # 200 = data length (time)

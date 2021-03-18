@@ -6,8 +6,6 @@ Algebraic variables
 import numpy as np
 from state_variable_names import initialise_var_names
 import model_functions as f
-import parameters as p
-from multipliers import V_d
 
 # Define a class that will contain attributes = algebraic variables
 class alg_vars():   
@@ -20,7 +18,9 @@ class alg_vars():
 # input_data: experimental data used for the neuronal input functions
 # total_waveform: an array containing the fast triangular input pulses when using the thalamic input T(t)
 # location: for use inside a function ('in function') or an array for use outside of a function ('out function')
-def set_algebraic_variables(u, t, idx, input_data, total_waveform, location):
+def set_algebraic_variables(p,u, t, idx, input_data, total_waveform, location,change_index):
+    from multipliers import  V_d_function
+    V_d=V_d_function(change_index)
     
     # Initialise variable names for clarity 
     v = initialise_var_names(u, idx, location)
@@ -44,8 +44,8 @@ def set_algebraic_variables(u, t, idx, input_data, total_waveform, location):
         a.k_e = 1 / (1 + np.exp(-(p.a_e * (p.k_e_input - p.theta_e)))) - 1 / (1 + np.exp(p.a_e * p.theta_e))
         a.k_i = 1 / (1 + np.exp(-(p.a_i * (p.k_i_input - p.theta_i)))) - 1 / (1 + np.exp(p.a_i * p.theta_i))
     
-        a.P = f.input_P(t, input_data, location)
-        a.Q = f.input_Q(t, input_data, location)
+        a.P = f.input_P(p,t, input_data, location)
+        a.Q = f.input_Q(p,t, input_data, location)
     
         a.arg_e = p.c1 * v.E_t - p.c2 * v.I_t + a.P  # [-]           Excitatory cells response function input
         a.arg_i = p.c3 * v.E_t - p.c4 * v.I_t + a.Q  # [-]           Inhibitory cells response function input
@@ -169,7 +169,7 @@ def set_algebraic_variables(u, t, idx, input_data, total_waveform, location):
     a.J_Cl_i = p.G_Cl_i * (v.v_i - p.v_Cl_i)  
     a.J_NaK_i = p.F_NaK_i
     a.J_K_i   = p.G_K_i * v.w_i * (v.v_i - p.v_K_i)
-    a.J_degrad_i = V_d[53]*(p.k_d_i * v.I_i)
+    a.J_degrad_i = V_d[52]*(p.k_d_i * v.I_i)
     
     a.v_KIR_i = p.z_1 * v.K_p - p.z_2
     a.G_KIR_i = p.F_KIR_i * np.exp(p.z_5 * v.v_i + p.z_3 * v.K_p)           # Changed by including np.exp(-z_4) parameter into F_KIR_i parameter, no large constant in np.exponential equation
@@ -190,9 +190,9 @@ def set_algebraic_variables(u, t, idx, input_data, total_waveform, location):
     a.J_degrad_j = V_d[70]*(p.k_d_j * v.I_j)
     
     # Coupling
-    a.V_coup_i = -p.G_coup * (v.v_i - v.v_j)
-    a.J_IP3_coup_i = -p.P_IP3 * (v.I_i - v.I_j)
-    a.J_Ca_coup_i = -p.P_Ca * (v.Ca_i - v.Ca_j)
+    a.V_coup_i = V_d[49]*(-p.G_coup * (v.v_i - v.v_j))
+    a.J_IP3_coup_i = V_d[53]*(-p.P_IP3 * (v.I_i - v.I_j))
+    a.J_Ca_coup_i = V_d[44]*(-p.P_Ca * (v.Ca_i - v.Ca_j))
     
     a.c_w_i = 1/2 * (1 + np.tanh((v.cGMP_i - 10.75)/0.668) )
     a.K_act_i = (v.Ca_i + a.c_w_i)**2 / ((v.Ca_i + a.c_w_i)**2 + p.alpha_act_i * np.exp(-(v.v_i - p.v_Ca3_i - p.Hshift*(v.H_i-p.H0)) / p.R_K_i)) # Is shifted by 20-HETE ******** 
