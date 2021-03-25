@@ -1,5 +1,4 @@
-
-def single_eval(iteration,data_choice,change_index):
+def single_eval_with_plot(iteration,data_choice,change_index):
     
     
     import sys
@@ -96,6 +95,53 @@ def single_eval(iteration,data_choice,change_index):
     del t
     
     
+    dataset = 'tots_NODRUG_pre'
+    fig_hemo_whiskerOptoComparison, LNAME_HET_Data = im.import_Berwick_HET_LNAME_Data(dataset, area='Whisker')
+
+    # Plot the hemodynamics for the model, whisker and opto experiments with error bars - 3 subplots for HbO, HbR, HbT
+    fig_hemo_whiskerOptoComparison = plt.figure(figsize=(14,5), dpi=80, edgecolor='k') 
+    #
+    fig_hemo_whiskerOptoComparison.add_subplot(1,3,1)
+    plt.gca().get_yaxis().get_major_formatter().set_useOffset(False) # stop weird exponential notation
+    plt.plot(time, a.HBO_N, label = 'model')
+    #plt.errorbar(LNAME_HET_Data.time, LNAME_HET_Data.HbOopto_mean, LNAME_HET_Data.HbOopto_std, capsize=3, errorevery=12, elinewidth=1.5, capthick=1, label = 'Opto')
+    plt.errorbar(LNAME_HET_Data.time, LNAME_HET_Data.HbOwhisk_mean, LNAME_HET_Data.HbOwhisk_std, capsize=3, errorevery=12, elinewidth=1.5, capthick=1, label = 'Whisk')
+    plt.title('HbO')
+    plt.xlabel('Time [s]') 
+    plt.xlim(-2,20)  
+    plt.ylim(0.94, 1.1)  
+    plt.legend(loc='best')
+    plt.tight_layout()
+    #
+    fig_hemo_whiskerOptoComparison.add_subplot(1,3,2)
+    plt.gca().get_yaxis().get_major_formatter().set_useOffset(False) # stop weird exponential notation
+    plt.plot(time, a.HBR_N, label = 'model')
+    #plt.errorbar(LNAME_HET_Data.time, LNAME_HET_Data.HbRopto_mean, LNAME_HET_Data.HbRopto_std, capsize=3, errorevery=12, elinewidth=1.5, capthick=1, label = 'Opto')
+    plt.errorbar(LNAME_HET_Data.time, LNAME_HET_Data.HbRwhisk_mean, LNAME_HET_Data.HbRwhisk_std, capsize=3, errorevery=12, elinewidth=1.5, capthick=1, label = 'Whisk')
+    plt.title('Reaction '+ str(change_index)+ '; HbR')
+    plt.xlabel('Time [s]') 
+    plt.xlim(-2,20)  
+    plt.ylim(0.94, 1.1)  
+    plt.legend(loc='best')
+    plt.tight_layout()
+    #
+    fig_hemo_whiskerOptoComparison.add_subplot(1,3,3)
+    plt.gca().get_yaxis().get_major_formatter().set_useOffset(False) # stop weird exponential notation
+    plt.plot(time, a.HBT_N, label = 'model')
+    #plt.errorbar(LNAME_HET_Data.time, LNAME_HET_Data.HbTopto_mean, LNAME_HET_Data.HbTopto_std, capsize=3, errorevery=12, elinewidth=1.5, capthick=1, label = 'Opto')
+    plt.errorbar(LNAME_HET_Data.time, LNAME_HET_Data.HbTwhisk_mean, LNAME_HET_Data.HbTwhisk_std, capsize=3, errorevery=12, elinewidth=1.5, capthick=1, label = 'Whisk')
+    plt.title('HbT')
+    plt.xlabel('Time [s]') 
+    plt.xlim(-2,20)  
+    plt.ylim(0.94, 1.1)  
+    plt.legend(loc='best')
+    plt.savefig('Reaction_figures/Reaction'+str(change_index)+'.pdf')
+    
+    
+    
+    
+    
+    
     pulse_marker=np.where(time>=0.0)
     pulse_marker=pulse_marker[0][0]
     
@@ -139,4 +185,4 @@ def single_eval(iteration,data_choice,change_index):
     
     #os.chdir('../')
     
-    return v, a
+    return v
