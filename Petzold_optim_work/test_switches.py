@@ -94,7 +94,7 @@ from numpy.linalg import norm
 values='Robin_Pre2'
 model='pre'
 
-norm_flag=np.inf
+norm_flag=2
 
 v_nominal, a_nominal =single_eval(values,model,-1)
 v=[]

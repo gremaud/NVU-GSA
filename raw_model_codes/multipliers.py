@@ -24,7 +24,7 @@ V_IC = np.ones(51)
 # optimised_twice_all = all parameters are scaled by a mulitplier (obtained by optimising the 'optimised once' model)
 # no_optimisation = nominal realisation
 
-optimisation_type = 'optimised_twice_top25'
+optimisation_type = 'nominal'
 
 
 if optimisation_type  == 'optimised_once':

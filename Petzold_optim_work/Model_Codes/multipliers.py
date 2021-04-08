@@ -188,7 +188,6 @@ def V_c_function(optimisation_type):
         temp_values = df.values.flatten()
         for i in range(len(locations_matlab)):
             V_c[locations_matlab[i]-1]=V_c[locations_matlab[i]-1]*temp_values[i]
-                
-                
+                         
     return V_c
 
