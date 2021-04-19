@@ -16,9 +16,9 @@ import pandas as pd
 # Nominal realisation (parameters and ICs just mulitplied by ones)
 
 V_IC = np.ones(51)
-data=pd.read_csv('./Samples/V_IC.csv', usecols = [0],names=['name'])
-df = pd.DataFrame(data).astype('float_')
-V_IC = df.values.flatten()
+#data=pd.read_csv('./Samples/V_IC.csv', usecols = [0],names=['name'])
+#df = pd.DataFrame(data).astype('float_')
+#V_IC = df.values.flatten()
 def V_d_function(change_index):
     V_d = np.ones(70+1)
     if change_index >=0:

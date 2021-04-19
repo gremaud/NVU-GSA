@@ -52,17 +52,17 @@ def p_function(iteration,switch,change_index):
         p.Qinput = 1.0
                         
     if p.NOswitch == 'normal':
-        p.NOswitch_NE = 1 * V_d[3]      # Turn on neuronal NO production 
-        p.NOswitch_EC_WSS = 1 * V_d[4]  # Turn on WSS induced eNOS production 
-        p.NOswitch_EC_CA = 1 * V_d[5]   # Turn on Ca2+ induced eNOS production 
+        p.NOswitch_NE = 1      # Turn on neuronal NO production 
+        p.NOswitch_EC_WSS = 1   # Turn on WSS induced eNOS production 
+        p.NOswitch_EC_CA = 1    # Turn on Ca2+ induced eNOS production 
     elif p.NOswitch == '7NI':
-        p.NOswitch_NE = 0 * V_d[3]     # Turn off neuronal NO production 
-        p.NOswitch_EC_WSS = 1 * V_d[4] # Turn on WSS induced eNOS production 
-        p.NOswitch_EC_CA = 1 * V_d[5] # Turn on Ca2+ induced eNOS production 
+        p.NOswitch_NE = 0     # Turn off neuronal NO production 
+        p.NOswitch_EC_WSS = 1  # Turn on WSS induced eNOS production 
+        p.NOswitch_EC_CA = 1 # Turn on Ca2+ induced eNOS production 
     elif p.NOswitch == 'LNAME':
-        p.NOswitch_NE = 0 * V_d[3]     # Turn off neuronal NO production 
-        p.NOswitch_EC_WSS = 0 * V_d[4] # Turn off WSS induced eNOS production 
-        p.NOswitch_EC_CA = 0 * V_d[5] # Turn off Ca2+ induced eNOS production
+        p.NOswitch_NE = 0      # Turn off neuronal NO production 
+        p.NOswitch_EC_WSS = 0  # Turn off WSS induced eNOS production 
+        p.NOswitch_EC_CA = 0  # Turn off Ca2+ induced eNOS production
     
     if p.HETswitch == 'normal':
        p.HETswitch_20HETE = 1 # turn on 20-HETE production
@@ -263,9 +263,9 @@ def p_function(iteration,switch,change_index):
     p.mu2_n = 0.2e-2 * V_c[49]    # [ms**-1]  original values 0.0167e-3 
     
     # Switches
-    p.GluSwitch = 1 * V_d[1]      # Turn on/off glutamate input [1:default]
-    p.O2switch = 1 * V_d[2]        # O2switch = 0 ATP is plentiful, O2switch = 1 ATP is limited (oxygen-limited regime) [1:default]
-    p.LCpathway = 0 + (1- V_d[8])        # Locus coeruleus pathway used for InputCase = 'ZhengData', 'ThalamicTrianglesZheng', 'ZhengFittedParams' [0:default]
+    p.GluSwitch = 1     # Turn on/off glutamate input [1:default]
+    p.O2switch = 1        # O2switch = 0 ATP is plentiful, O2switch = 1 ATP is limited (oxygen-limited regime) [1:default]
+    p.LCpathway = 0        # Locus coeruleus pathway used for InputCase = 'ZhengData', 'ThalamicTrianglesZheng', 'ZhengFittedParams' [0:default]
     
     ''' Astrocyte '''
         
@@ -281,8 +281,8 @@ def p_function(iteration,switch,change_index):
     p.J_NaK_max = 2.38e1 * V_c[57]                        # original value 2.37e01 [uM ms**-1]    
     
     # Switches to turn on and off some things
-    p.rhoSwitch = 1 * V_d[9] 
-    p.trpv_switch = 1 * V_d[10] 
+    p.rhoSwitch = 1 
+    p.trpv_switch = 1 
     
     p.rho_min = 0.1 * V_c[58]      
     p.rho_max = 0.7 * V_c[59]   

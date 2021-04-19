@@ -95,50 +95,48 @@ values='Robin_Pre2'
 model='pre'
 
 norm_flag=2
+v_a_flag='a_diff'
 
 v_nominal, a_nominal =single_eval(values,model,-1)
 v=[]
 a=[]
 
 
+if v_a_flag =='v':
+    for i in range(70+1):
+        v_temp, a_temp =single_eval(values,model,i)
+        v.append(v_temp)
+        difference=np.zeros([70+1,2])
+    
+    for i in range(70+1):
+        check=compare_results_v(v[i],v[i],norm_flag)
+        if check[0] :
+            print('%i failed' % i)
+            difference[i]=-1
+        else:
+            print('%i passed' % i)
+            diff=compare_results_v(v_nominal,v[i],norm_flag)
+            difference[i,0]=norm(diff[1],norm_flag)
+            difference[i,1]=np.argmax(diff[1])
 
-# for i in range(70+1):
-#     v_temp, a_temp =single_eval(values,model,i)
-#     v.append(v_temp)
-# if norm_flag==np.inf:
-#     difference=np.zeros([70+1,2])
-# else:
-#     difference=np.zeros([70+1])
+                
 
-# for i in range(70+1):
-#     check=compare_results_v(v[i],v[i],norm_flag)
-#     if check[0] :
-#         print('%i failed' % i)
-#         difference[i]=-1
-#     else:
-#         print('%i passed' % i)
-#         diff=compare_results_v(v_nominal,v[i],norm_flag)
-#         if norm_flag==np.inf:
-#             difference[i,0]=norm(diff[1],norm_flag)
-#             difference[i,1]=np.argmax(diff[1])
-#         else:
-#             difference[i]=norm(diff[1],norm_flag)
-
-for i in range(70+1):
-    v_temp, a_temp =single_eval(values,model,i)
-    a.append(a_temp)        
-
-
-results=np.zeros([70+1,2])
-for i in range(70+1):
-    check=compare_results_a(a[i],a[i],norm_flag)
-    if check[0] :
-         print('%i failed' % i)
-         results[i,:]=-1
-    else:
-         print('%i passed' % i)
-         temp=compare_results_a(a_nominal,a[i],norm_flag)
-         results[i,:]=temp[1:]
+if v_a_flag=='a_diff':
+    for i in range(70+1):
+        v_temp, a_temp =single_eval(values,model,i)
+        a.append(a_temp)        
+    
+    
+    results=np.zeros([70+1,2])
+    for i in range(70+1):
+        check=compare_results_a(a[i],a[i],norm_flag)
+        if check[0] :
+             print('%i failed' % i)
+             results[i,:]=-1
+        else:
+             print('%i passed' % i)
+             temp=compare_results_a(a_nominal,a[i],norm_flag)
+             results[i,:]=temp[1:]
 
             
 print('done')

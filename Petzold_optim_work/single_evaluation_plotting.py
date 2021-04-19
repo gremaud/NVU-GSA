@@ -134,7 +134,7 @@ def single_eval_with_plot(iteration,data_choice,change_index):
     xlim1 = -1
     xlim2 = 20
     if data_choice == 'pre': 
-        dataset = 'tots_LNAME_pre'
+        dataset = 'tots_NODRUG_pre'
     elif data_choice == 'post':
         dataset = 'tots_LNAME_post'
         
