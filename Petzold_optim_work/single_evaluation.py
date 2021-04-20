@@ -139,4 +139,4 @@ def single_eval(iteration,data_choice,change_index):
     
     #os.chdir('../')
     
-    return v, a
+    return v, a, time
