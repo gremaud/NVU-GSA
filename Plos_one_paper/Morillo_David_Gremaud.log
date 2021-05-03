@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.1.25)  27 APR 2021 14:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.1.25)  27 APR 2021 15:23
 entering extended mode
 **./Morillo_David_Gremaud.tex
 (Morillo_David_Gremaud.tex
@@ -585,13 +585,13 @@ Package rerunfilecheck Info: File `Morillo_David_Gremaud.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11517 strings out of 479618
- 181075 string characters out of 2865026
- 534035 words of memory out of 3000000
- 28411 multiletter control sequences out of 15000+200000
- 409533 words of font info for 72 fonts, out of 3000000 for 9000
+ 11504 strings out of 479618
+ 180920 string characters out of 2865026
+ 534034 words of memory out of 3000000
+ 28407 multiletter control sequences out of 15000+200000
+ 408712 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,11n,88p,353b,414s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 80i,11n,88p,353b,418s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Robin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk> <C:\Users\Robin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcbx1440.pk> <C:\Users\Robin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -603,9 +603,9 @@ grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Robin/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Robin/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/
 Robin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Morillo_David_Gremaud.pdf (3 pages, 108124 bytes).
+Output written on Morillo_David_Gremaud.pdf (3 pages, 107566 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 25089 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 89 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 20993 words of extra memory for PDF output out of 24883 (max. 10000000)
 

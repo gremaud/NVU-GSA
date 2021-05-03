@@ -1,0 +1,542 @@
+\documentclass[]{article}
+\usepackage[toc,nonumberlist,nopostdot,acronym,nogroupskip]{glossaries}
+\usepackage{xspace} 
+\usepackage{longtable}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{layout}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks = true, citecolor = gray, urlcolor = gray, linkcolor = gray}
+\usepackage{amsfonts}
+\usepackage[justification=centering]{caption}
+\usepackage[numbers]{natbib}
+\usepackage{subcaption}
+\usepackage{todonotes}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage[parfill]{parskip}
+\usepackage{times}
+\usepackage{siunitx}
+\sisetup{output-exponent-marker=\ensuremath{\mathrm{e}}}
+\usepackage{wrapfig}
+\usepackage{adjustbox}
+\usepackage{titlesec}
+\usepackage{tikz}
+
+\setlength\voffset{-1in}
+\setlength\hoffset{-1in}
+\setlength\topmargin{2.5cm}
+\setlength\oddsidemargin{2.5cm}
+\setlength\textheight{23.5cm}
+\setlength\textwidth{16.7cm}
+\setlength\footskip{1cm}
+\setlength\headheight{0cm}
+\setlength\headsep{0cm}
+
+\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\}
+\renewcommand*{\glsnamefont}[1]{\textmd{#1}}
+%\setglossarystyle{long4col}
+
+\usepackage[parfill]{parskip}
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+% \Add{} and \Del{} Corrections and \Mark{}
+%\usepackage[active,new,noold,marker]{xrcs}
+%%%%%%%%%%%%
+\newcommand{\sodpot}{Na$^+$/K$^+$\xspace}
+\newcommand{\jplc}{J$_{\text{\scriptsize PLC}}$\xspace}
+\newcommand{\hco}{HCO$_3^-$\xspace}
+\newcommand{\tim}[1]{\textcolor{red}{\textbf{#1}}}
+\newcommand{\ums}{$\mu$m s$^{-1}$\xspace}
+\newcommand{\mus}{$\mu$M s$^{-1}$\xspace}
+\newcommand{\ox}{O$_2$\xspace}
+\newcommand{\Cmol}{C mol$^{-1}$\xspace}
+\newcommand{\JmolK}{J mol$^{-1}$ K$^{-1}$\xspace}
+\newcommand{\perOhmm}{$\Omega^{-1}$\xspace}
+\newcommand{\uM}{$\mu$M\xspace}
+\newcommand{\um}{$\mu$m\xspace}
+\newcommand{\mAcm}{mA cm$^{-2}$\xspace}
+\newcommand{\n}{$^{-1}$\xspace}
+\newcommand{\e}[1]{\times 10^{#1}}
+\newcommand{\psec}{s$^{-1}$\xspace}
+\newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+\newcommand{\haem}{h$\ae$moglobin }
+\newcommand{\ee}[1]{\times 10^{#1}}
+
+%\newcommand{\na}{Na$^{\text{\scriptsize +}}$\xspace}
+%\newcommand{\pot}{K$^{\text{\scriptsize +}}$\xspace}
+%\newcommand{\cl}{Cl$^{\text{\scriptsize -}}$\xspace}
+%\newcommand{\ca}{Ca$^{\text{\scriptsize 2+}}$\xspace}
+%\newcommand{\ip}{IP$_{\text{\scriptsize 3}}$\xspace}
+\newcommand{\na}{\gls{na}\xspace}
+\newcommand{\pot}{\gls{pot}\xspace}
+\newcommand{\cl}{\gls{cl}\xspace}
+\newcommand{\ca}{\gls{ca}\xspace}
+\newcommand{\ip}{\gls{ip3}\xspace}
+
+
+
+\linespread{1.2}
+
+\setcounter{tocdepth}{1}
+
+\newcommand{\td}[1]{\todo[inline, color=GreenYellow, bordercolor=White, size=\normalsize]{\color{Black}#1}}
+\newcommand{\vv}{\overline{v_1}} 
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+\newlength{\drop} % Command for generating a specific amount of whitespace
+\drop=0.1\textheight % Define the command as 10% of the total text height
+
+\include{./glossary}
+
+%opening
+\title{Unique List of "Reactions" }
+\author{Tim David }
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Introduction}
+The list below is a unique list provided so as to generate a protocol for deleting "reactions". "Reactions" are defined as distinct formulae forming the RHS of the relevant o.d.e. 
+As a way of getting to a reduced system of NVC we have  not altered the neuron model nor the ?? 
+
+\section{Synaptic Cleft and Astrocyte}
+\textbf{THE LIST }\\
+Table \ref{tab:table1}
+\begin{longtable}[h!] { p{0.12\linewidth}  p{0.28\linewidth}     p{0.6\linewidth} }
+	\hline
+	Reaction     &    Description &  \\
+	\hline
+&  &  \textbf{Astrocyte and Synaptic Cleft...........}	 \\
+1	&    $J_{K_k}$			& \pot channel				\\
+2	&   $2J_{NaK_k}$ 			& \pot \na -ATPase pump \\
+3	&   	 $J_{NKCC1_k}$ 	    	& \na, \pot and Cl flux through the NKCC1 channel\\
+4	& 	  $J_{KCC1_k}$ 		&  Cl and \pot flux through the KCC1 channel \\		
+5	& 	  $J_{KNEtoSC}$			& flux of \pot into the SC based on the extracellular \pot  \\ 
+6	& 	  $J_{Na_k}$		& \na flux through the \na channel   \\ 
+7	& 	  $J_{NBC_k}$	& \na and HCO3 flux through the NBC channel  \\ 
+8	&	  $J_{NaNEtoSC},$ 	& flux of \na into the SC based on the extracellular \pot =  $J_{KNEtoSC}$\\
+9	& 	   $J_{IP3_k}$  & flux of \ca through the IP3R channel \\
+10	& 	  $J_{pump_k}$	& flux of \ca through the uptake pump \\
+11 & 	  $J_{ERleak_k}$ & flux of \ca through the leak channel\\
+12	& 	  $\frac{J_{TRPV_k}}{r_{buff}}$ &flux of \ca through TRPV4 channel \\
+13	& 	  $J_{CICR_k}$  & flux of \ca through CICR into astrocytic cytosol \\
+14	& 	  $r_h G$ &  rate of IP3 production in astrocyte due to glutamate receptors\\
+15	& 	   $k_{deg}IP3_k$ & Rate constant for IP3 degradation in astrocyte\\
+16	& 	   $V_{eet} \max(Ca_k - c_{k_{min}}, 0)$ & production of astrocytic epoxyeicosatrienoic acid (EET) concentration\\
+17	& 	   $k_{eet}eet_k$ & degredation of astrocytic epoxyeicosatrienoic acid (EET) concentration\\
+18	& 	   $J_{BK_k}$ & \\
+19	& 	   $J_{Cl_k}$ & \\
+20  & 	   $\phi_n  w_{\infty} $ & \\
+21	& 	   $-\phi_n w_k$ & \\
+22	& 	  $k_{on}  K_{inh}  $ & inactivation variable $h_k$ of the astrocytic IP$_3$R channel\\
+23	& 	   $- k_{on}(Ca_k + K_{inh}) h_k$ & inactivation variable $h_k$ of the astrocytic IP$_3$R channel\\
+24	& 	   $\frac{m_{inf}}{\tau_{TRPV4}}$ & TRPV4 channel open probability \\
+	& 	     & \\
+25	& 	   $\frac{-m_k}{\tau_{TRPV4}}$ & TRPV4 channel open probability  \\
+	& 	    & \\
+26	& 	   $\frac{(AA_i - AA_k)}{\tau_{AA}}$ & concentration of arachidonic acid in the astrocyte $AA_k$.\\
+	& 	    & \\ 
+27	& 	   $\frac{AA_m  AA_{max}}{(AA_m + max(Ca_k - Ca_0))^2 \frac{dCa_k}{dt}} $ & concentration of arachidonic acid in the astrocyte $AA_k$.\\
+ \textbf{PVS.....}& & \\
+28  &    $\frac{J_{BK_k}}{VR_{pk}}$ & \pot concentration in the \gls{pvs}\\
+29 &    $\frac{J_{KIR_i}}{VR_{pi}}$ & \pot concentration in the \gls{pvs}\\
+30 &    $K_{decay_p} (K_p - K_{min_p})$ & \pot concentration in the \gls{pvs}\\
+31 &    $\frac{J_{TRPV_k}}{VR_{pk}}$ &\ca concentration in the \gls{pvs}  \\
+32 &    $\frac{J_{VOCC_i}}{VR_{pi}} $ & \ca concentration in the \gls{pvs} \\
+33 &    $- Ca_{decay_p} ( Ca_p - Ca_{min_p} ) $ &  \ca concentration in the \gls{pvs}\\
+34 &    $\frac{m_{\infty_k} }{t_{TRPV_k}}  $ & The open probability of the \gls{trpv} channel\\
+35 &    $\frac{- m_k}{t_{TRPV_k}} $ &The open probability of the \gls{trpv} channel \\
+ \textbf{SMC ...........} &      &\\
+36 &    $ J_{IP_{3i}} $ & Cytosolic \ca in the \gls{smc}\\
+37 &    $- J_{SR_{uptake_{i}}} $ & Cytosolic \ca in the \gls{smc}\\
+38 &    $ + J_{CICR_{i}}$ & Cytosolic \ca in the \gls{smc} \\
+39 &    $- J_{extrusion_{i}} $ &Cytosolic \ca in the \gls{smc} \\
+40 &    $  J_{SR_{leak_{i}}}$ & Cytosolic \ca in the \gls{smc}\\
+41 &    $- J_{VOCC_{i}}  $ &Cytosolic \ca in the \gls{smc}  \\
+42 &    $ J_{Na/Ca_{i}} $ & Cytosolic \ca in the \gls{smc}\\
+43 &    $- 0.1J_{stretch_{i}} $ & Cytosolic \ca in the \gls{smc}\\
+44 &    $J_{Ca^{2+}-coupling_{i}}^{SMC-EC} $ &Cytosolic \ca in the \gls{smc} \\
+45 &    $-\gamma_v J_{NaK_{i}}$ & Membrane potential of the \gls{smc}\\
+46 &    $-\gamma_v J_{Cl_{i}}  $ & Membrane potential of the \gls{smc}\\
+47 &    $-\gamma_v J_{K_{i}}$ & Membrane potential of the \gls{smc} \\
+48 &    $-\gamma_v J_{KIR_{i}} $ & Membrane potential of the \gls{smc}\\
+49 &    $V^{SMC-EC}_{coupling_{i}} $ &  Membrane potential of the \gls{smc}\\
+50 &    $ \lambda_{i} \left( K_{act_{i}} \right)$ & Open state probability of \ca-activated \pot channels\\
+51 &    $-\lambda_{i}  w_{i}  $ &  Open state probability of \ca-activated \pot channels\\
+ &   &  \textbf{fluxes for \pot in SMC are 45, 47, 48 divided by $\gamma_v$} \\
+52 &    $ - J_{degrad_{i}}$ & \ip concentration in the \gls{smc}\\
+ &   &  \\
+53 &    $ J^{SMC-EC}_{IP_{3}-coupling_{i}}$ & \ip concentration in the \gls{smc}\\
+54 &    $ \frac{AA_{k}}{\tau_{AA}}$ &Arachidonic acid in the \gls{smc} \\
+ & &      \\
+55 &    $ \frac{-AA_i}{\tau_{AA}}$ &Arachidonic acid in the \gls{smc} \\
+56 &    $\frac{1}{1+{exp(\frac{(NO_i-NO_{rest})}{R_{NO}}})}\frac{V_a AA_i}{K_a+AA_i} $ & 20-HETE in the \gls{smc}\\
+57 &    $ \frac{V_f AA_i}{K_f+AA_i}$ &  20-HETE in the \gls{smc}\\
+58 &    $ -\lambda_h H_i$ & 20-HETE in the \gls{smc} \\
+ \textbf{EC ...........}   &  & \\
+ 59 &    $ J_{IP_{3j}}$ & Cytosolic \ca concentration in the \gls{ec} \\
+ 60 &    $- J_{ER_{uptake_{j}}} $ &  Cytosolic \ca concentration in the \gls{ec}\\
+ 61 &    $J_{CICR_{j}} $ &Cytosolic \ca concentration in the \gls{ec} \\
+ 62 &    $- J_{extrusion_{j}} $ & Cytosolic \ca concentration in the \gls{ec}\\
+ 63 &    $J_{ER_{leak_{j}}} $ &Cytosolic \ca concentration in the \gls{ec} \\
+ 64 &    $ J_{cation_{j}}$ & Cytosolic \ca concentration in the \gls{ec}\\
+ 65 &    $ J_{0_{j}}$ & Cytosolic \ca concentration in the \gls{ec}\\
+ 66 &    $- J_{stretch_{j}} $ &Cytosolic \ca concentration in the \gls{ec} \\
+ 67 &    $-\frac{1}{C_{m_{j}}} ( I_{K_{j}}+I_{R_{j}}) $ & Membrane potential of the \gls{ec} \\
+ 68 &    $- V^{SMC-EC}_{coupling_{j}} $ &  Membrane potential of the \gls{ec}\\
+ 69 &    $ J_{PLC}$ &\ip concentration of the \gls{ec} \\
+ 70 &    $- J_{degrad_{j}}  $ &\ip concentration of the \gls{ec} \\
+ 71 &    $- J^{SMC-EC}_{IP_{3}-coupling_{j}}$ & \ip concentration of the \gls{ec}\\
+	\hline
+	\label{tab:table1}
+\end{longtable}
+%\textbf{Mean \% difference for each reaction taken out of RHS of state variable o.d.e.}\\
+%Those in \textcolor{red}{red} are considered to be a small variation ($\le 0.5$) away from the "standard" output in the Pre LNAME column only.\\
+%\begin{longtable}[h!] { p{0.08\linewidth}  p{0.28\linewidth} p{0.30\linewidth}  p{0.10\linewidth} p{0.10\linewidth} p{0.10\linewidth}    }
+%%	\hline
+%%	Reaction     &    Description &  \\
+%	\hline
+%Rn No.&Reaction name & Reaction equation & Nom  values &   Pre LNAME &  LNAME\\
+%1& potassium (\pot) channel &$J_{K_k}=G_{K_{k}}(v_k - E_{K_k})$ & NaN & NaN & NaN\\
+%2& \pot sodium (\na)-ATPase pump&$J_{NaK_{k}}=J_{NaK_{max}}\frac{{Na_k}^{1.5}}{{Na_k}^{1.5}+{K_{Na_k}}^{1.5}}\frac{K_s}{K_s+K_{K_s}}$ & NaN& NaN & NaN\\
+%3&\na, \pot and Cl flux through the NKCC1 channel&$J_{NKCC1_k}=G_{NKCC1_k} \phi \ln \left(\frac{Na_s K_s {Cl_s}^2}{Na_k K_k {Cl_k}^2}\right)$ & 11.3647& 103.668& 15.774\\
+%4& Cl and \pot flux through the KCC1 channel&$J_{KCC1_k}=G_{KCC1_k} \phi \ln \left(\frac{K_s Cl_s }{K_k Cl_k}\right)$ & 2.92255& 3.50445& 0.312609\\
+%5& flux of \pot into the SC based on the extracellular \pot &$J_{KNEtoSC} = c_{unit} k_{syn}  \frac{d K_e}{dt}$ &13.8638& 12.2936& 1.14984\\
+%6& \na flux through the \na channel& $J_{Na_k}=G_{Na_{k}}(v_k - E_{Na_k})$ & 27.4598& NaN& NaN\\
+%7& \na and HCO3 flux through the NBC channel&$J_{NBC_k}=G_{NBC_k}\left(  v_k -E_{NBC_k}  \right)$ & 15.4067& 20.9232& 20.3828\\
+%8& \textcolor{red}{flux of \pot into the SC based on the extracellular \pot}&$J_{NaNEtoSC} =c_{unit} k_{syn}  \frac{d K_e}{dt} $ & 1.23E-06& 1.24E-06& \textcolor{red}{1.46E-06}\\
+%9& flux of \ca through the IP3R channel&$J_{IP3_k} = J_{max} \left[  \left(\frac{IP3_k}{IP3_k + K_i}\right) \left(\frac{Ca_k}{Ca_k + K_{act_k}}\right) h_k \right]^3
+%\left( 1 - \frac{Ca_k}{s_k}  \right) $& 11.9907& 10.9213& 10.8591\\
+%10& flux of \ca through the uptake pump& $J_{pump_k} = V_{max} \frac{Ca_k^2}{Ca_k^2 + k_{pump}^2}$& 20499.4& 5229.78& 6345.93\\
+%11& \textcolor{red}{flux of \ca through the leak channel}&$J_{ERleak_k} = P_L \left(  1 - \frac{Ca_k}{s_k}  \right)$ & 0.201784& 0.188584& 0.203819\\
+%12& flux of \ca through TRPV4 channel& $J_{TRPV_k} = G_{TRPV_k} m_k (v_k - E_{TRPV_k})$& 1.98131& 2.39468& 2.61217\\
+%13& \textcolor{red}{flux of \ca through CICR into astrocytic cytosol}&$J_{CICR_k}=C_k\frac{s_k^{4}}{sc_k^4+s_k^4}\frac{Ca_k^4}{cc_k^4+Ca_k^4}$ & 0.289466& 0.231412& 0.253216\\
+%14& rate of IP3 production in astrocyte due to glutamate receptors& $r_h G = r_h\frac{\rho + \delta_G}{K_G + \rho + \delta_G}$& 13.9423& 12.8567& 12.7969\\
+%15& Rate constant for IP3 degradation in astrocyte&$k_{deg}IP3_k$ & 772.904& 786.729& 788.115\\
+%16& production of astrocytic epoxyeicosatrienoic acid (EET) concentration & $V_{eet} \max(Ca_k - c_{k_{min}}, 0)$&2.42196 &2.32234& 2.26521\\
+%17& degredation of astrocytic epoxyeicosatrienoic acid (EET) concentration &$k_{eet}eet_k$ &19843 &4046.34 &3818.88\\
+%18&\pot flux through the \gls{bk} channel (\mus): &$ J_{BK_k}= G_{BK_k}w_k\left( v_k-E_{BK_k} \right)$&  0.0259098 &1.34566& 1.19497\\
+%19& \cl flux through the \cl channel (\mus): &$J_{Cl_k}=G_{Cl_{k}}(v_k - E_{Cl_k})$ & 5229.98& 107.112& NaN\\
+%20&The time constant associated with the opening of the \gls{bk} channel (\psec): &$\phi_nw_{\infty} = \psi_n \cosh \left( \frac{v_k - v_3}{2 v_4} \right)\frac{1}{2} \left( 1 + \tanh \left( \frac{v_k + eet_{shift} eet_k - v_3}{v_4}  \right)  \right)$ & 1.9864& 99.5972& 3.15087\\
+%21&The time constant associated with the opening of the \gls{bk} channel (\psec):  & $ \phi_n w_k = \psi_n \cosh \left( \frac{v_k - v_3}{2 v_4} \right)$ & 4456.74& 108.687& 1972.06\\
+%22& inactivation variable $h_k$ of the astrocytic IP3R channel & $k_{on}K_{inh}$&12.7274 &11.6818 &11.6922\\
+%23& inactivation variable $h_k$ of the astrocytic IP3R channel &$- k_{on}(Ca_k + K_{inh}) h_k$ & 20521.8 &5258.68 &6298.66\\
+%24& steady state value of TRPV4 channel open probability&$\frac{m_{inf}}{\tau_{TRPV4}}$ & 3.99857 &4.44414 &4.66208\\
+%25& TRPV4 channel open probability & $\frac{-m_k}{\tau_{TRPV4}}$ &26339.9 &13134.4 & 15206.1\\
+%26& \textcolor{red}{diffusion of astrocytic arachidonic acid $AA_k$} &$\frac{(AA_i - AA_k)}{\tau_{AA}}$  &0.489883& 0.398994 &0.29954\\
+%27& production of astrocytic arachidonic acid $AA_k$ &$\frac{AA_m  AA_{max}}{(AA_m + max(Ca_k - Ca_0))^2 \frac{dCa_k}{dt}} $ & 0.697379 &0.583868 &0.565113\\
+%28& \pot concentration in the PV) & \textcolor{red}{this is a possible repetition of $J_{BK}$ see reaction 18}&0.0257964 &1.39179 &1.21474\\
+%29&\textcolor{red}{ \pot concentration in the PVS} & $\frac{J_{KIR_i}}{VR_{pi}}$ \textcolor{red}{this is a repetition of reaction 48 see below in SMC} & 0.0286817& 0.00571118& 0.00961057\\
+%30& decay of \pot  in the PVS & $K_{decay_p} (K_p - K_{min_p})$& 1.27863& 0.555279& 0.680289\\
+%31&\textcolor{red}{ calcium (\ca) concentration in the PVS}&\textcolor{red}{repetition of reaction 12 see above} & 0.0839505& 0.113492& 21.5819\\
+%32& \textcolor{red}{\ca concentration in the PVS}& \textcolor{red}{repetition of reaction 41 see below in SMC}& 0.0831116& 0.0400754& 21.5744\\
+%33& decay of \ca in the PVS&$- Ca_{decay_p} ( Ca_p - Ca_{min_p} ) $ & NaN& 5.24994& 5.59523\\
+%36& IP3 flux  in SMC&$ J_{IP3_i} = F_{i}\frac{IP3_i^{2}}{K_{ri}^{2}+IP3_{i}^{2}}$&2.33282& 4.044& 3.92088\\
+%37&  \ca flux into SMC SR &$J_{SR_{uptake_{i}}} = B_{i}\frac{Ca_i^{2}}{c_{bi}^{2}+Ca_i^{2}}$ &4.29869& 7.22607& 7.69384\\
+%38&  SMC \ca induced \ca flux&$J_{CICR_{i}} = C_{i}\frac{\ s_i^{2}}{s_{ci}^{2}+\ s_i^{2}}    \frac{Ca_i^{4}}{c_{ci}^{4}+Ca_i^{4}}$ & 7.00223 &4.62941 &3.55808\\
+%39& \ca extrusion by \gls{atp}-ase pumps & $J_{extrusion_{i}} = D_{i}Ca_i   \left( 1+ \frac{v_{i}-v_{d}}{R_{di}}\right)$&32.8498 &52.579 &41.953\\
+%40& Leak current from SMC \gls{sr} & $J_{SR_{leak_{i}}} = L_{i} s_i$&1.11272& 19.2637& 31.9058\\
+%41& flux of \ca through the \gls{vocc} SMC channel & $J_{VOCC,i} = g_{VOCC} \frac{v_i - v_{Ca1}}{1 + \exp\left(\frac{-(v_i - v_{Ca2})}{R_Ca}\right)}$ &15.3257& 99.1052& 25.779\\
+%42& Flux of \ca exchanging with \na in the \na/\ca exchange &$J_{Na/Ca_{i}} = G_{Na/Ca_{i}} \frac{Ca_i}     {Ca_i + c_{Na/Cai}} \left( v_{i}-v_{Na/Ca_{i}} \right)$ &1.83393 & 2.82293 &2.68652\\
+%43& \ca flux through the stretch-activated SMC channels &$ J_{stretch_{i}}= \frac{G_{stretch}}{1+ \exp\left(-\alpha_{stretch}  \left(  \frac{\Delta pR}{h} -\sigma_{0}   \right) \right)}  \left(  v_{i}-E_{SAC}   \right)$ &99.7217 &9.66304 &26.5778\\
+%44& \ca coupling between \glspl{smc} and \glspl{ec}  &$J_{Ca^{2+}-coupling_{i}}^{SMC-EC}= -P_{Ca^{2+}}(Ca_i-Ca_j)$ &5.01872& 8.44386& 7.2599\\
+%45& Flux through the \sodpot pump affecting membrane potential &$J_{NaK_{i}}= F_{NaK} $ & 11.2387 &9.03677 &10.5312\\
+%46& \cl flux through the \cl channel  & $ J_{Cl_{i}} = G_{Cli} \left(  v_{i} - v_{Cli}  \right)$&8.25968 &5.15817 &6.72641\\
+%47& \pot flux through \pot channel  &$J_{K_{i}}= G_{Ki} w_{i} \left(  v_{i} - v_{K_i}  \right) $ &37.4592& 56.8849& 51.4741\\
+%48& Flux through \gls{kir} channels in the \gls{smc} &$ J_{KIR_{i}} =  G_{KIR_{i}}( v_{i} - v_{KIR_{i}})$&1.2449& 1.04102 &1.28341\\
+% & & $ G_{KIR_i} = F_{KIR_{i}} \exp(z_5 v_i +z_3 K_p - z_4)$& & & \\
+%49& Heterocellular electrical coupling between \glspl{smc} and \glspl{ec} & $ V_{coupling_{i}}^{SMC-EC}= -G_{coup}(v_{i}-v_{j})$& 2.67974& 1.59955& 1.88809\\
+%50& Equilibrium distribution of open channel states for the \gls{smc} \gls{bk} channels & $ \lambda_{i} K_{act_{i}} = \lambda_{i}\frac{  \left( Ca_i + c_{w,i}\right)^{2}}    {\left( Ca_i + c_{w,i} \right)^{2}    + \alpha_{act_i} \exp( -\left(   \left[ v_{i}-v_{Ca_{3i}}-h_{shift}(H_i-H_0)\right] /R_{Ki}   \right) ) }$&32.3637 &47.5581 &40.4617\\
+%51& Open state probability of \ca-activated \pot channels &$\lambda_{i}w_i$ &108.313 &160.959& 161.293\\
+%52&\ip degradation & $ J_{degrad_{i}}= k_{di} IP3_i$&28.4357 &42.5538 &36.9564\\
+%53& Heterocellular \ip coupling between \glspl{smc} and \glspl{ec} &$J_{IP_{3}-coupling_{i}}^{SMC-EC}= -P_{IP_{3}}(IP3_{i}-IP3_{j})$&5.00104 &5.83602 &5.41072\\
+%54 &Diffusion of Arachidonic acid from astrocyte to SMC &$ \frac{AA_{k}}{\tau_{AA}}$ &7.79336 &6.68192 &6.69675\\
+%55& Diffusion of Arachidonic acid out of SMC&$ -\frac{AA_{i}}{\tau_{AA}}$ &1.57E+15& 1.61E+15& 1.68E+15\\
+%56& \textcolor{red}{production SMC 20-HETE mediated by NO}& $\frac{1}{1+{exp(\frac{(NO_i-NO_{rest})}{R_{NO}}})}\frac{V_a AA_i}{K_a+AA_i} $& 0.193047& 0.177748 &0.136\\
+%57& production of SMC 20-HETE &$\frac{1}{1+{exp(\frac{(NO_i-NO_{rest})}{R_{NO}}})}\frac{V_a AA_i}{K_a+AA_i} $ &2.68364 &1.93619 &1.78302\\
+%58& decay of SMC 20-HETE &$ -\lambda_h H_i$ &1212.34& 1205.64 &1139.48\\
+%59&EC \ca production via IP3&$J_{IP_{3j}} = F_{j}\frac{IP3_{j}^{2}}{K_{rj}^{2}+IP3_{j}^{2}}$ & 7.7971 &8.62695 &8.05149\\
+%60& Uptake of \ca into the endoplasmic reticulumC & $J_{ER_{uptake_{j}}} = B_{j}\frac{Ca_j^{2}}{c_{bj}^{2}+Ca_j^{2}} $&2.38164 &2.33615 &2.27978\\
+%61& \Gls{cicr} &$ J_{CICR_{j}} = C_{j}\frac{s_j^{2}}{s_{cj}^{2}+s_j^{2}}    \frac{Ca_j^{4}}{c_{cj}^{4}+Ca_j^{4}}$ &21.4714 &26.3972 &23.322\\
+%62& \ca extrusion by \ca-\gls{atp}-ase pumps &$ J_{extrusion_{j}} = D_{j}Ca_j $ &46.3124 &83.8736 &57.6053\\
+%63& \textcolor{red}{Leak current from the \gls{er}} & $J_{ER_{leak_{j}}} = L_{j}s_j $ &0.113283 &0.0920174 &0.100115\\
+%64& \ca influx through nonselective cation channels & $J_{cation_{j}} = G_{cat_{j}} (E_{Ca_{j}} - v_{j}) \frac{1}{2} \left(   1+ \mathrm{tanh}  \left(  \frac{\mathrm{log}_{10} (Ca_j/c_{log})  - m_{3_{cat_{j}}} }    {m_{4_{cat_{j}}}}   \right)      \right)  $&2.42263 &3.24955 &3.17584\\
+%65& Constant \ca influx & $J_{0_{j}}= 0.029$&1.78034 &2.20647 &2.38569\\
+%66& \ca flux through the stretch-activated channels &$J_{stretch_{j}}= \frac{G_{stretch}}{1+ \exp\left(-\alpha_{stretch}  \left(  \frac{\Delta pR}{h} -\sigma_{0}   \right) \right)}  \left(  v_{j}-E_{SAC}   \right)  $ &3.6795 &6.01876 &23.3109\\
+%67& Membrane potential of the EC &$-\frac{1}{C_{m_{j}}} ( I_{K_{j}}+I_{R_{j}}). \quad  I_{R_{j}}= G_{R_{j}} ( v_{j} - v_{rest j}  ) \quad I_{K_{j}}= I_{K_{j}} = G_{totj} (v_{j}-v_{Kj}) \left(   I_{BK_{Caj}} + I_{SK_{Caj}} \right) I_{BK_{Caj}} = 0.2 \left(   1+ \mathrm{tanh}   \left(   \frac{   (\mathrm{log}_{10} (Ca_j/c_{log}) - c) (v_{j}-b_{j}) - a_{1j}  }   { m_{3bj} ( v_{j} + a_{2j} (\mathrm{log}_{10} (Ca_j/c_{log}) -c )-b_{j} )^{2} + m_{4bj} }  \right)     \right)\quad I_{SK_{Caj}} = 0.3\left( 1+ \mathrm{tanh}  \left(  \frac{   \mathrm{log}_{10} (Ca_j/c_{log}) -m_{3sj}  } {m_{4sj}}  \right)      \right) $ &4.85697 &4.65672 &3.62773\\
+%69& IP3 production via PLC &$J_{PLC}= 0.11$ &13.009 &13.8404 &13.8098\\
+%70& IP3 degradation  &$J_{degrad_{j}}= k_{dj} IP3_{j}$ &35.7783 &50.7781 &45.2309\\
+%71& IP3 coupling between SMC and EC& $ J^{SMC-EC}_{IP_{3}-coupling_{j}}=IP_{3,coup}(I_i-I_j)$ & & & \\
+%\end{longtable}
+Table \ref{tab:table2}
+\begin{longtable}[h!] { p{0.05\linewidth}  p{0.2\linewidth} p{0.1\linewidth}  p{0.10\linewidth} p{0.10\linewidth} p{0.1\linewidth}   p{0.2\linewidth} }
+\hline
+Rctn no.	&	Reaction name &1-norm&2-norm&inf-norm&(location of max) & equation\\
+0& 	N/A	&0	&	0	&	0&	$E_t$&\\
+1	&potassium (\pot) channel&	53.4665&		12.0407&		11.5731&	$v_i$ & \\
+2	&\pot sodium (\na)-ATPase pump&	NaN	&	NaN	&	NaN	&NaN\\
+3	&\na, \pot and Cl flux through the NKCC1 channel&	1.8031	&	1.17673	&	1.14719	&$w_k$\\
+4&	Cl and \pot flux through the KCC1 channel $J_{KCC1_k}$	&0.0213536	&	0.00855816	&	0.00916892&	$w_k$ &$G_{KCC1_k} \phi \ln \left(\frac{K_s Cl_s }{K_k Cl_k}\right)$\\
+5&	flux of \pot into the SC based on the extracellular \pot&	0.232818&		0.921282	&	0.912761&	$w_k$\\
+6&	\na flux through the \na channel &	6.69095	&	2.28405	&	5.53287&	$v_k$\\
+7&	\na and HCO3 flux through the NBC channel $J_{NBC_k}$	&3.04E-01	&	0.56255	&	0.501727&	$w_k$ &$G_{NBC_k}\left(  v_k -E_{NBC_k}  \right)$\\
+8&	flux of \pot into the SC based on the extracellular \pot = JKNEtoSC	&2.37E-02	&	1.17E-01	&	1.77E-01&	$w_k$\\
+9&	flux of \ca through the IP3R channel&	5.63E+00	&	2.09388	&	1.00846&	$h_k$\\
+10	&flux of \ca through the uptake pump&	3179.47	&	2068.65	&	260.773	&$ee_t$\\
+11	&flux of \ca through the leak channel	$J_{ERleak_k} $&0.098875	&	0.0412828	&	0.0276192&	$w_k$ &$P_L \left(  1 - \frac{Ca_k}{s_k}  \right)$ \\
+12	&flux of \ca through TRPV4 channel	&1.34165	&	0.590297	&	0.539168&	$w_k$& \\
+13&	flux of \ca through CICR into astrocytic cytosol $J_{CICR_k}$&	0.0422956	&	0.0752756	&	0.111209&	$ee_t$&$C_k\frac{s_k^{4}}{sc_k^4+s_k^4}\frac{Ca_k^4}{cc_k^4+Ca_k^4}$ \\
+14&	rate of IP3 production in astrocyte due to glutamate receptors&	6.62065	&	2.3194	&	1.00846	$h_k$&\\
+15&	Rate constant for IP3 degradation in astrocyte	&357.233	&	391.514	&	129.627&	$I_k$&\\
+16&	production of astrocytic epoxyeicosatrienoic acid (EET) concentration&	1.25478	&	1.10137	&	1&	$ee_t$&\\
+17	&degredation of astrocytic epoxyeicosatrienoic acid (EET) concentration	&2444.74	&	2033.68	&	420.738	&$ee_t$&\\
+18&	\pot flux through the \gls{bk} channel (\mus):$J_{BK_k}$&	0.246612	&	0.194939	&	0.669853&	$K_p$&$  G_{BK_k}w_k\left( v_k-E_{BK_k} \right)$\\
+19	&\cl flux through the \cl channel (\mus):	&4.60284	&	1.91901	&	1.15891	&$Cl_k$&\\
+20	&The time constant associated with the opening of the \gls{bk} channel (\psec) &	1.24139		&1.01878	&	1&	$w_k$&\\
+21	&The time constant associated with the opening of the \gls{bk} channel (\psec) &	1616.18	&	506.339	&	37.5492	&$w_k$&\\
+22&	inactivation variable hk of the astrocytic IP3R channel	&6.03146	&	2.24241	&	1&	$h_k$&\\
+23	&inactivation variable hk of the astrocytic IP3R channel&	3175.03	&	1886.23	&	269.894	&$h_k$&\\
+24&	TRPV4 channel open probability&	2.38878	&	1.16172	&	0.999886&	$m_k$&\\
+25&	TRPV4 channel open probability	&6643.8	&	5033.35	&	927.663&	$ee_t$&\\
+26&	concentration of arachidonic acid in the astrocyte AAk.	&0.0316276	&	0.0429046	&	0.150997&	$AA_k$&$\frac{(AA_i - AA_k)}{\tau_{AA}}$\\
+27	&concentration of arachidonic acid in the astrocyte AA &	0.0457825	&	0.138873	&	0.654171&	$AA_k$&$\frac{AA_m  AA_{max}}{(AA_m + max(Ca_k - Ca_0))^2 \frac{dCa_k}{dt}} $ \\
+28	&\pot concentration in the perivascular space (PVS)	&0.248199	&	0.195333	&	0.669853&	$K_p$& possible repetition of reaction 18 \\
+29&	\pot concentration in the PVS	&0.00463886	&	0.0034176	&	0.00140806&	$K_p$& this is a repetition of reaction 48 see below in SMC\\
+30&	\pot concentration in the PVS	&0.374649	&	0.270297	&	0.111932&	$K_p$ &$K_{decay_p} (K_p - K_{min_p})$\\
+31	&calcium (\ca) concentration in the PVS&	0.0609743	&	0.0530334	&	0.0578325&	$Ca_p$ &{repetition of reaction 12 see above}\\
+32	&\ca concentration in the PVS&	0.0211558	&	0.0183736	&	0.0235179&	$Ca_p$&{repetition of reaction 41 see below in SMC}\\
+33&	\ca concentration in the PVS&	NaN	&	NaN	&	NaN	&NaN\\
+34	&N/A&	0	&	0	&	0	&$E_t$\\
+35	&N/A&	0	&	0&		0&	$E_t$\\
+36	&Cytosolic \ca in the smooth muscle cell (SMC)&	2.03695	&	0.619121	&	0.243314&	AMp\\
+37	&Cytosolic \ca in the SMC&	1.41071		&1.76962	&	9.76799	&$AMp$\\
+38	&Cytosolic \ca in the SMC	&1.95459	&	1.43214	&	1.65995&	$s_i$\\
+39	&Cytosolic \ca in the SMC&	29.1442	&	16.4226	&	10.3864	&AMp\\
+40	&Cytosolic \ca in the SMC	&5.34223&		4.79812	&	10.7775	&AMp\\
+41	&Cytosolic \ca in the SMC&	3.84721	&	1.15592	&	0.385505&	AM\\
+42	&Cytosolic \ca in the SMC&	1.37241	&	0.42607	&	0.328498&	AMp\\
+43	&Cytosolic \ca in the SMC&	4.73275	&	1.4221	&	0.477013&	$w_i$\\
+44	&Cytosolic \ca in the SMC	&4.20672	&	1.16217	&	0.383345&	AM\\
+45	&Membrane potential of the SMC	&NaN	&	NaN	&	NaN	&NaN\\
+46	&Membrane potential of the SMC&	2.50098	&	0.781827	&	0.302132&	$w_i$\\
+47	&Membrane potential of the SMC&	30.6122	&	15.183	&	10.0965	&AMp\\
+48	&Membrane potential of the SMC	$J_{KIR_{i}}  $&0.334658	&	0.108702	&	0.124455&	$w_i$&$ G_{KIR_{i}}( v_{i} - v_{KIR_{i}})$ \\
+49	&Membrane potential of the SMC$V_{coupling_{i}}^{SMC-EC}$ &	0.794953	&	0.258294	&	0.123328&	$w_i$&$ -G_{coup}(v_{i}-v_{j})$\\
+50	&Open state probability of \ca-activated \pot channels&	26.051	&	14.1635		&10.102	&AMp\\
+51	&Open state probability of \ca-activated \pot channels&	70.4464	&	68.3471	&	61.955&	$w_i$\\
+52&	inositol trisphosphate (IP3) concentration in the SMC	&20.9808	&	10.6533	&	10.1006	&AMp\\
+53	&IP3 concentration in the SMC&	2.92977	&	1.12559	&	1&	$I_i$\\
+54&Arachidonic acid in the SMC	&3.40E+00	&	1.70348	&	1&	$AA_i$\\
+55	&Arachidonic acid in the SMC&	2.03E+14	&	6.22E+14	&	3.16E+15	&$AA_i$\\
+56	&20-HETE in the SMC&	5.07E+01	&	7.1214	&	1&	$E_t$\\
+57	&20-HETE in the SMC	&0.998665	&	0.675777	&	0.599416&	$H_i$&$\frac{1}{1+{exp(\frac{(NO_i-NO_{rest})}{R_{NO}}})}\frac{V_a AA_i}{K_a+AA_i} $\\
+58	&20-HETE in the SMC	&536.714	&	589.716	&	725.883	&$H_i$\\
+59	&Cytosolic \ca concentration in the endothelial cell (EC)	&4.31153	&	1.22434	&	0.725525&	$s_j$\\
+60	&Cytosolic \ca concentration in the EC	&1.01901	&	0.990576	&	0.918791&	$s_j$\\
+61	&Cytosolic \ca concentration in the EC	&12.5428	&	12.495	&	13.2761&	$s_j$\\
+62	&Cytosolic \ca concentration in the EC	&37.3107	&	19.2012		&10.1376	&AMp\\
+63	&Cytosolic \ca concentration in the EC$J_{ER_{leak_{j}}}$&	0.0380883	&	0.0370073	&	0.0406557	&$s_j$&$ L_{j}s_j $ \\
+64	&Cytosolic \ca concentration in the EC	&1.63543	&	0.466454	&	0.223622&	$Ca_j$\\
+65&	Cytosolic \ca concentration in the EC&	1.11102		&0.321257	&	0.147914	&$Ca_j$\\
+66	&Cytosolic \ca concentration in the EC	&3.01928	&	0.848642	&	0.446334&	$s_j$\\
+67	&Membrane potential of the EC&	2.35771	&	0.703111	&	0.512982&	$v_j$\\
+68	&N/A	&0	&	0	&	0&	$E_t$\\
+69	&IP3 concentration of the EC&	6.9521	&	1.98954	&	1&	$I_i$\\
+70&	IP3 concentration of the EC	&49.3683	&	7.14973	&	10.1178&	AMp\\
+\label{tab:table2}
+\end{longtable}
+Table \ref{tab:table3} lists the reaction along with the error associated with the removal of that specific reaction when compared to the experiments of Berwick et al. 
+Table \ref{tab:table3}
+\begin{longtable}[h!] { p{0.05\linewidth}  p{0.3\linewidth} p{0.3\linewidth}   p{0.3\linewidth} }
+	\hline
+Rctn no.	&	Reaction name & normalized HBO Error; 2-norm	& normalized HBR Error; 2-norm\\
+0	&N/A	&	0.000468269	&0.000871442\\
+1	&potassium (K+) channel&	NaN	&NaN\\
+2&	K+ sodium (Na+)-ATPase pump	&NaN&	NaN\\
+3&	Na+, K+ and Cl flux through the NKCC1 channel&0.00195538&	0.000500168\\
+4&	Cl and K+ flux through the KCC1 channel	&	0.000466595	&0.000875713\\
+5&	flux of K+ into the SC based on the extracellular K+&	0.0135393&	0.00639256\\
+6&	Na+ flux through the Na+ channel&	0.017721&	0.0073648\\
+7&	Na+ and HCO3 flux through the NBC channel	&	0.0014388	&0.000539501\\
+8&	flux of K+ into the SC based on the extracellular K+ = JKNEtoSC	&	NaN&	NaN\\
+9&	flux of Ca2+ through the IP3R channel	&	0.029407&	0.0101798\\
+10&	flux of Ca2+ through the uptake pump	&	0.00780579&	0.00267052\\
+11&	flux of Ca2+ through the leak channel	&	0.000475598	&0.000864279\\
+12&	flux of Ca2+ through TRPV4 channel	&0.00196372	&0.00117208\\
+13&	flux of Ca2+ through CICR into astrocytic cytosol&	0.000512237	&0.000949758\\
+14	&rate of IP3 production in astrocyte due to glutamate receptors	&	0.029407&	0.0101798\\
+15	&Rate constant for IP3 degradation in astrocyte	&	0.0158477&	0.00536754\\
+16	&production of astrocytic epoxyeicosatrienoic acid (EET) concentration	&	0.00566864&	0.00263931\\
+17	&degredation of astrocytic epoxyeicosatrienoic acid (EET) concentration	&0.00201507	&0.000941013\\
+18	& &	0.0191554&	0.0077376\\
+19& &	0.0125768&	0.00589543\\
+20	& &	0.0191554&	0.00773761\\
+21	& &NaN	&NaN\\
+22&inactivation variable hk of the astrocytic IP3R channel	&	0.029407&	0.0101798\\
+23&	inactivation variable hk of the astrocytic IP3R channel	&	0.00777447&	0.00266655\\
+24	&TRPV4 channel open probability	&	0.00196378	&0.00117213\\
+25	&TRPV4 channel open probability	&	0.0082669&	0.00272957\\
+26&	concentration of arachidonic acid in the astrocyte AAk.	&0.00261581&	0.00123312\\
+27&	concentration of arachidonic acid in the astrocyte AA &	0.00696495&	0.00326088\\
+28	&K+ concentration in the perivascular space (PVS)&	0.0191541	0.00773728\\
+29&	K+ concentration in the PVS	0.00463886	&	0.000469189	&0.000871822\\
+30	&K+ concentration in the PVS&		0.00242898	&0.00132313\\
+31	&calcium (Ca2+) concentration in the PVS	&NaN	&NaN\\
+32	&Ca2+ concentration in the PVS	&	0.000468217&	0.000871653\\
+33&	Ca2+ concentration in the PVS	&NaN	&NaN\\
+34	&N/A	&	0.000468269&	0.000871442\\
+35	&N/A&	0.000468269	&0.000871442\\
+36&	Cytosolic Ca2+ in the smooth muscle cell (SMC)	&	0.00212447	&0.00102861\\
+37&	Cytosolic Ca2+ in the SMC&	0.00268971&	0.00203337\\
+38&	Cytosolic Ca2+ in the SMC&	0.00875328&	0.00455686\\
+39&	Cytosolic Ca2+ in the SMC&	0.0144208&	0.00701218\\
+40&	Cytosolic Ca2+ in the SMC	&	NaN	&NaN\\
+41&	Cytosolic Ca2+ in the SMC	&	0.0116207&	0.00582014\\
+42&	Cytosolic Ca2+ in the SMC&	0.00583438&	0.00390169\\
+43&	Cytosolic Ca2+ in the SMC	&	0.00364038&	0.002412\\
+44&	Cytosolic Ca2+ in the SMC&	0.00611134	&0.00166663\\
+45&	Membrane potential of the SMC	&NaN&	NaN\\
+46&	Membrane potential of the SMC	&	0.00287015&	0.00153477\\
+47	&Membrane potential of the SMC	&	0.0149869&	0.00710705\\
+48	&Membrane potential of the SMC&	0.0199942&	0.00790603\\
+49&	Membrane potential of the SMC&	0.00193546&	0.000823211\\
+50	&Open state probability of Ca2+-activated K+ channels	&	0.0149869&	0.00710705\\
+51	&Open state probability of Ca2+-activated K+ channels&0.0190485	&0.00847316\\
+52&	inositol trisphosphate (IP3) concentration in the SMC	&NaN	&NaN\\
+53	&IP3 concentration in the SMC	&	0.00120016&	0.000903448\\
+54	&Arachidonic acid in the SMC	&	0.00429406	&0.00277598\\
+55	&Arachidonic acid in the SMC&	5.60641	&0.82813\\
+56	&20-HETE in the SMC	&	0.00560948	&0.00282501\\
+57	&20-HETE in the SMC	&	0.00240002&	0.00195237\\
+58	&20-HETE in the SMC	&	0.0149869&	0.00710705\\
+59	&Cytosolic Ca2+ concentration in the endothelial cell (EC)	&	0.00410624&	0.001356\\
+60&	Cytosolic Ca2+ concentration in the EC	&	0.000479328	&0.000871541\\
+61&	Cytosolic Ca2+ concentration in the EC	&	0.00047282	&0.000860244\\
+62&	Cytosolic Ca2+ concentration in the EC	&	0.0155095&	0.00716025\\
+63&	Cytosolic Ca2+ concentration in the EC	&	0.000465781	&0.000871406\\
+64	&Cytosolic Ca2+ concentration in the EC	&0.00147519&	0.00094885\\
+65	&Cytosolic Ca2+ concentration in the EC	&	0.00104536&	0.000894999\\
+66	&Cytosolic Ca2+ concentration in the EC	&	0.00268227	&0.00112258\\
+67	&Membrane potential of the EC	&	0.00348108	&0.00112305\\
+68	&N/A	&0.000468269	0.000871442\\
+69&	IP3 concentration of the EC	&0.00757592&	0.00210779\\
+70&	IP3 concentration of the EC	&NaN	&NaN\\
+\label{tab:table3}
+\end{longtable}
+\section{Notes on Table \ref{tab:table3} above}
+We should note that removing reaction 7 given by the \na and \hco flux through the NBC channel (\mus): 
+\begin{equation} \label{eq:J_NBC}
+J_{NBC_k}=G_{NBC_k}\left(  v_k -E_{NBC_k}  \right)
+\end{equation}
+means the NBC flux is zero. 
+\hco concentration in the \gls{sc} (\uM):
+\begin{equation} \label{eq:HCOEx}
+\frac{d HCO_{3_{s}}}{dt}=  \frac{1}{VR_{sk}} \left( -2 J_{NBC_{k}} \right)
+\end{equation} 
+\hco concentration in the astrocyte (\uM):
+\begin{equation} \label{eq:HCOInt}
+\frac{d HCO_{3_k}}{dt}= 2 J_{NBC_{k}} 
+\end{equation}
+Hence on the basis of the two equations defined above we can eliminate \hco from both the SC and Astrocyte. This removes 2 equations from the ode set. However this must be accompanied by the elimination of the definition of the Nernst potential for the NBC channel (mV):
+\begin{equation} \label{eq:E_NBC}
+E_{NBC_k}=\frac{\phi}{z_{NBC}}\ln\left( \frac{Na_s {HCO_{3_s}}^2}{Na_k {HCO_{3_k}}^2}\right) 
+\end{equation}
+since \hco is now effectively zero in both the synaptic cleft and the astrocyte. 
+
+Reaction 49 is a membrane voltage coupling equation between SMC and EC given by heterocellular electrical coupling between \glspl{smc} and \glspl{ec} :
+\begin{equation} \label{eq:Vcouplingi}
+V_{coupling_{i}}^{SMC-EC}= -G_{coup}(v_{i}-v_{j})
+\end{equation}
+This does not seem to have any effect on the profiles for HbO and HbR. 
+
+Reaction 61 defines the \Gls{cicr} mechanism in the EC given by:
+\begin{equation} \label{eq:JCICRJ}
+J_{CICR_{j}} = C_{j}\frac{s_j^{2}}{s_{cj}^{2}+s_j^{2}}    \frac{Ca_j^{4}}{c_{cj}^{4}+Ca_j^{4}}
+\end{equation}
+Table \ref{tab:Table4} shows the reactions ranked from smallest to largest for the error between the numerical output and the experiment for HbR.\\
+Table \ref{tab:Table4}.
+\begin{longtable}[h!] { p{0.05\linewidth}  p{0.3\linewidth}   p{0.3\linewidth} }
+	\hline
+Rctn no	&	normalized HBO Error; 2-norm	& normalized HBR Error; 2-norm\\
+3	&	0.00195538	&0.000500168\\
+7	&0.0014388	&0.000539501\\
+49	&0.00193546&	0.000823211\\
+61	&0.00047282&	0.000860244\\
+11&	0.000475598	&0.000864279\\
+63	&0.000465781	&0.000871406\\
+0	&	0.000468269	&0.000871442\\
+34&0.000468269	&0.000871442\\
+35	&	0.000468269	&0.000871442\\
+68	& 0.000468269	&0.000871442\\
+60&	0.000479328&	0.000871541\\
+32&	0.000468217	&0.000871653\\
+29	&0.000469189&	0.000871822\\
+4	&0.000466595	&0.000875713\\
+65	&	0.00104536	&0.000894999\\
+53	&	0.00120016	&0.000903448\\
+17	&	0.00201507	&0.000941013\\
+64	&	0.00147519&	0.00094885\\
+13	&0.000512237	&0.000949758\\
+36	&	0.00212447	&0.00102861\\
+66	&	0.00268227&	0.00112258\\
+67	&0.00348108&	0.00112305\\
+12	&	0.00196372&	0.00117208\\
+24&	0.00196378&	0.00117213\\
+26	&	0.00261581	&0.00123312\\
+30	&0.00242898	&0.00132313\\
+59	&	0.00410624	&0.001356\\
+46	&	0.00287015	&0.00153477\\
+44	&	0.00611134&	0.00166663\\
+57	&0.00240002	&0.00195237\\
+37	&	0.00268971	&0.00203337\\
+69	&	0.00757592	&0.00210779\\
+43	&	0.00364038	&0.002412\\
+16	&0.00566864	&0.00263931\\
+23	&0.00777447	&0.00266655\\
+10	&	0.00780579	&0.00267052\\
+25	&	0.0082669	&0.00272957\\
+54	&	0.00429406&	0.00277598\\
+56	&	0.00560948&	0.00282501\\
+27	&0.00696495&	0.00326088\\
+42&	0.00583438	&0.00390169\\
+38&	0.00875328	&0.00455686\\
+15	&	0.0158477&	0.00536754\\
+41	Cytosolic Ca2+ in the SMC	0.0116207	0.00582014
+19		0.0125768	0.00589543
+5	flux of K+ into the SC based on the extracellular K+	0.0135393	0.00639256
+39	Cytosolic Ca2+ in the SMC	0.0144208	0.00701218
+47	Membrane potential of the SMC	0.0149869	0.00710705
+50	Open state probability of Ca2+-activated K+ channels	0.0149869	0.00710705
+58	20-HETE in the SMC	0.0149869	0.00710705
+62	Cytosolic Ca2+ concentration in the EC	0.0155095	0.00716025
+6	Na+ flux through the Na+ channel	0.017721	0.0073648
+28	K+ concentration in the perivascular space (PVS)	0.0191541	0.00773728
+18		0.0191554	0.0077376
+20		0.0191554	0.00773761
+48	Membrane potential of the SMC	0.0199942	0.00790603
+51	Open state probability of Ca2+-activated K+ channels	0.0190485	0.00847316
+9	flux of Ca2+ through the IP3R channel	0.029407	0.0101798
+14	rate of IP3 production in astrocyte due to glutamate receptors	0.029407	0.0101798
+22	inactivation variable hk of the astrocytic IP3R channel	0.029407	0.0101798
+55	Arachidonic acid in the SMC	5.60641	0.82813
+1	potassium (K+) channel	NaN	NaN
+2	K+ sodium (Na+)-ATPase pump	NaN	NaN
+8	flux of K+ into the SC based on the extracellular K+ = JKNEtoSC	NaN	NaN
+21		NaN	NaN
+31	calcium (Ca2+) concentration in the PVS	NaN	NaN
+33	Ca2+ concentration in the PVS	NaN	NaN
+40	Cytosolic Ca2+ in the SMC	NaN	NaN
+45	Membrane potential of the SMC	NaN	NaN
+52	inositol trisphosphate (IP3) concentration in the SMC	NaN	NaN
+70	IP3 concentration of the EC	NaN	NaN
+\label{tab:Table4}
+\end{longtable}
+\end{document}
