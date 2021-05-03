@@ -21,6 +21,7 @@
 \usepackage{adjustbox}
 \usepackage{titlesec}
 \usepackage{tikz}
+\usepackage{todonotes}
 
 \setlength\voffset{-1in}
 \setlength\hoffset{-1in}
@@ -98,7 +99,7 @@
 \begin{document}
 
 \maketitle
-
+\listoftodos
 \begin{abstract}
 
 \end{abstract}
@@ -108,6 +109,8 @@ The list below is a unique list provided so as to generate a protocol for deleti
 As a way of getting to a reduced system of NVC we have  not altered the neuron model nor the ?? 
 
 \section{Synaptic Cleft and Astrocyte}
+\todo[inline]{Double check that all of the reaction descriptions are still correct after Robin edits}
+\todo[inline]{Fix numbering changes from Robin edits}
 \textbf{THE LIST }\\
 Table \ref{tab:table1}
 \begin{longtable}[h!] { p{0.12\linewidth}  p{0.28\linewidth}     p{0.6\linewidth} }
@@ -116,7 +119,7 @@ Table \ref{tab:table1}
 	\hline
 &  &  \textbf{Astrocyte and Synaptic Cleft...........}	 \\
 1	&    $J_{K_k}$			& \pot channel				\\
-2	&   $2J_{NaK_k}$ 			& \pot \na -ATPase pump \\
+2	&   $J_{NaK_k}$ 			& \pot \na -ATPase pump \\
 3	&   	 $J_{NKCC1_k}$ 	    	& \na, \pot and Cl flux through the NKCC1 channel\\
 4	& 	  $J_{KCC1_k}$ 		&  Cl and \pot flux through the KCC1 channel \\		
 5	& 	  $J_{KNEtoSC}$			& flux of \pot into the SC based on the extracellular \pot  \\ 
@@ -126,75 +129,68 @@ Table \ref{tab:table1}
 9	& 	   $J_{IP3_k}$  & flux of \ca through the IP3R channel \\
 10	& 	  $J_{pump_k}$	& flux of \ca through the uptake pump \\
 11 & 	  $J_{ERleak_k}$ & flux of \ca through the leak channel\\
-12	& 	  $\frac{J_{TRPV_k}}{r_{buff}}$ &flux of \ca through TRPV4 channel \\
+12	& 	  $J_{TRPV_k}$ &flux of \ca through TRPV4 channel \\
 13	& 	  $J_{CICR_k}$  & flux of \ca through CICR into astrocytic cytosol \\
-14	& 	  $r_h G$ &  rate of IP3 production in astrocyte due to glutamate receptors\\
-15	& 	   $k_{deg}IP3_k$ & Rate constant for IP3 degradation in astrocyte\\
-16	& 	   $V_{eet} \max(Ca_k - c_{k_{min}}, 0)$ & production of astrocytic epoxyeicosatrienoic acid (EET) concentration\\
-17	& 	   $k_{eet}eet_k$ & degredation of astrocytic epoxyeicosatrienoic acid (EET) concentration\\
+14	& 	  $G$ &  rate of IP3 production in astrocyte due to glutamate receptors\\
+15	& 	   $k_{deg}$ & Rate constant for IP3 degradation in astrocyte\todo[inline]{For reactions 15, 16, and 17 I wasn't quite sure how to handle it. I changed them to just be a single parameter, but I am not sure if that parameter also effects other parts of the model}\\
+16	& 	   $V_{eet}$ & production of astrocytic epoxyeicosatrienoic acid (EET) concentration\\
+17	& 	   $k_{eet}$ & degredation of astrocytic epoxyeicosatrienoic acid (EET) concentration\\
 18	& 	   $J_{BK_k}$ & \\
 19	& 	   $J_{Cl_k}$ & \\
-20  & 	   $\phi_n  w_{\infty} $ & \\
-21	& 	   $-\phi_n w_k$ & \\
-22	& 	  $k_{on}  K_{inh}  $ & inactivation variable $h_k$ of the astrocytic IP$_3$R channel\\
-23	& 	   $- k_{on}(Ca_k + K_{inh}) h_k$ & inactivation variable $h_k$ of the astrocytic IP$_3$R channel\\
-24	& 	   $\frac{m_{inf}}{\tau_{TRPV4}}$ & TRPV4 channel open probability \\
-	& 	     & \\
-25	& 	   $\frac{-m_k}{\tau_{TRPV4}}$ & TRPV4 channel open probability  \\
+21	& 	   $\phi_n$ & \todo[inline]{I changed 20 and 21 so that reaction 21 toggles whether w\_k is constant or not}\\
+22	& 	  $k_{on}  $ & inactivation variable $h_k$ of the astrocytic IP$_3$R channel \todo[inline]{I changed 22 and 22 so that reaction 22 toggles whether h\_k is constant or not}\\
+
+25	& 	   $trpv_{switch}$ & TRPV4 channel open probability \todo[inline]{I changed 24 and 25 so that reaction 25 toggles whether m\_k is constant or not}  \\
 	& 	    & \\
-26	& 	   $\frac{(AA_i - AA_k)}{\tau_{AA}}$ & concentration of arachidonic acid in the astrocyte $AA_k$.\\
+26	& 	   $\frac{(AA_i - AA_k)}{\tau_{AA}}$ & concentration of arachidonic acid in the astrocyte $AA_k$. \todo[inline]{I don't know how to handle 26 and 27. 26 I could very carefully check the code for spaces where it was written AA\_k-AA\_i, but there is still a chance I would make a mistake. 27 I don't know what to do with at all.}\\
 	& 	    & \\ 
 27	& 	   $\frac{AA_m  AA_{max}}{(AA_m + max(Ca_k - Ca_0))^2 \frac{dCa_k}{dt}} $ & concentration of arachidonic acid in the astrocyte $AA_k$.\\
  \textbf{PVS.....}& & \\
-28  &    $\frac{J_{BK_k}}{VR_{pk}}$ & \pot concentration in the \gls{pvs}\\
-29 &    $\frac{J_{KIR_i}}{VR_{pi}}$ & \pot concentration in the \gls{pvs}\\
-30 &    $K_{decay_p} (K_p - K_{min_p})$ & \pot concentration in the \gls{pvs}\\
-31 &    $\frac{J_{TRPV_k}}{VR_{pk}}$ &\ca concentration in the \gls{pvs}  \\
-32 &    $\frac{J_{VOCC_i}}{VR_{pi}} $ & \ca concentration in the \gls{pvs} \\
-33 &    $- Ca_{decay_p} ( Ca_p - Ca_{min_p} ) $ &  \ca concentration in the \gls{pvs}\\
-34 &    $\frac{m_{\infty_k} }{t_{TRPV_k}}  $ & The open probability of the \gls{trpv} channel\\
-35 &    $\frac{- m_k}{t_{TRPV_k}} $ &The open probability of the \gls{trpv} channel \\
+28  &    $J_{BK_k}$ & \pot concentration in the \gls{pvs}\\
+29 &    $J_{KIR_i}$ & \pot concentration in the \gls{pvs}\\
+30 &    $K_{decay_p} $ & \pot concentration in the \gls{pvs}\\
+31 &    $J_{TRPV_k}$ &\ca concentration in the \gls{pvs}  \\
+32 &    $J_{VOCC_i} $ & \ca concentration in the \gls{pvs} \\
+33 &    $Ca_{decay_p} $ &  \ca concentration in the \gls{pvs}\\
  \textbf{SMC ...........} &      &\\
 36 &    $ J_{IP_{3i}} $ & Cytosolic \ca in the \gls{smc}\\
-37 &    $- J_{SR_{uptake_{i}}} $ & Cytosolic \ca in the \gls{smc}\\
-38 &    $ + J_{CICR_{i}}$ & Cytosolic \ca in the \gls{smc} \\
-39 &    $- J_{extrusion_{i}} $ &Cytosolic \ca in the \gls{smc} \\
+37 &    $J_{SR_{uptake_{i}}} $ & Cytosolic \ca in the \gls{smc}\\
+38 &    $ J_{CICR_{i}}$ & Cytosolic \ca in the \gls{smc} \\
+39 &    $J_{extrusion_{i}} $ &Cytosolic \ca in the \gls{smc} \\
 40 &    $  J_{SR_{leak_{i}}}$ & Cytosolic \ca in the \gls{smc}\\
-41 &    $- J_{VOCC_{i}}  $ &Cytosolic \ca in the \gls{smc}  \\
 42 &    $ J_{Na/Ca_{i}} $ & Cytosolic \ca in the \gls{smc}\\
-43 &    $- 0.1J_{stretch_{i}} $ & Cytosolic \ca in the \gls{smc}\\
+43 &    $J_{stretch_{i}} $ & Cytosolic \ca in the \gls{smc}\\
 44 &    $J_{Ca^{2+}-coupling_{i}}^{SMC-EC} $ &Cytosolic \ca in the \gls{smc} \\
-45 &    $-\gamma_v J_{NaK_{i}}$ & Membrane potential of the \gls{smc}\\
-46 &    $-\gamma_v J_{Cl_{i}}  $ & Membrane potential of the \gls{smc}\\
-47 &    $-\gamma_v J_{K_{i}}$ & Membrane potential of the \gls{smc} \\
-48 &    $-\gamma_v J_{KIR_{i}} $ & Membrane potential of the \gls{smc}\\
+45 &    $J_{NaK_{i}}$ & Membrane potential of the \gls{smc}\\
+46 &    $J_{Cl_{i}}  $ & Membrane potential of the \gls{smc}\\
+47 &    $ J_{K_{i}}$ & Membrane potential of the \gls{smc} \\
+48 &    $ J_{KIR_{i}} $ & Membrane potential of the \gls{smc}\\
 49 &    $V^{SMC-EC}_{coupling_{i}} $ &  Membrane potential of the \gls{smc}\\
-50 &    $ \lambda_{i} \left( K_{act_{i}} \right)$ & Open state probability of \ca-activated \pot channels\\
-51 &    $-\lambda_{i}  w_{i}  $ &  Open state probability of \ca-activated \pot channels\\
+50 &    $ K_{act_{i}} $ & Open state probability of \ca-activated \pot channels\\
+51 &    $\lambda_{i}   $ &  Open state probability of \ca-activated \pot channels \todo[inline]{My changes to 50 and 51 make it so that reaction 50 turns off part of an ODE and reaction 51 turns off that same part of the ODE as well as the rest of it. I am not sure if we should keep this or remove (my edited) reaction 50}\\
  &   &  \textbf{fluxes for \pot in SMC are 45, 47, 48 divided by $\gamma_v$} \\
-52 &    $ - J_{degrad_{i}}$ & \ip concentration in the \gls{smc}\\
+52 &    $ J_{degrad_{i}}$ & \ip concentration in the \gls{smc}\\
  &   &  \\
 53 &    $ J^{SMC-EC}_{IP_{3}-coupling_{i}}$ & \ip concentration in the \gls{smc}\\
 54 &    $ \frac{AA_{k}}{\tau_{AA}}$ &Arachidonic acid in the \gls{smc} \\
  & &      \\
 55 &    $ \frac{-AA_i}{\tau_{AA}}$ &Arachidonic acid in the \gls{smc} \\
-56 &    $\frac{1}{1+{exp(\frac{(NO_i-NO_{rest})}{R_{NO}}})}\frac{V_a AA_i}{K_a+AA_i} $ & 20-HETE in the \gls{smc}\\
-57 &    $ \frac{V_f AA_i}{K_f+AA_i}$ &  20-HETE in the \gls{smc}\\
-58 &    $ -\lambda_h H_i$ & 20-HETE in the \gls{smc} \\
+56 &    $\frac{1}{1+{exp(\frac{(NO_i-NO_{rest})}{R_{NO}}})}\frac{V_a AA_i}{K_a+AA_i} $ & 20-HETE in the \gls{smc} \\
+57 &    $ \frac{V_f AA_i}{K_f+AA_i}$ &  20-HETE in the \gls{smc}\todo[inline]{I am not sure what to do about 54, 55, 56, and 57. I think it would be very easy for me to mess things up/create a division by 0 error.}\\
+58 &    $ \lambda_h$ & 20-HETE in the \gls{smc} \\
  \textbf{EC ...........}   &  & \\
  59 &    $ J_{IP_{3j}}$ & Cytosolic \ca concentration in the \gls{ec} \\
- 60 &    $- J_{ER_{uptake_{j}}} $ &  Cytosolic \ca concentration in the \gls{ec}\\
+ 60 &    $ J_{ER_{uptake_{j}}} $ &  Cytosolic \ca concentration in the \gls{ec}\\
  61 &    $J_{CICR_{j}} $ &Cytosolic \ca concentration in the \gls{ec} \\
- 62 &    $- J_{extrusion_{j}} $ & Cytosolic \ca concentration in the \gls{ec}\\
+ 62 &    $ J_{extrusion_{j}} $ & Cytosolic \ca concentration in the \gls{ec}\\
  63 &    $J_{ER_{leak_{j}}} $ &Cytosolic \ca concentration in the \gls{ec} \\
  64 &    $ J_{cation_{j}}$ & Cytosolic \ca concentration in the \gls{ec}\\
  65 &    $ J_{0_{j}}$ & Cytosolic \ca concentration in the \gls{ec}\\
- 66 &    $- J_{stretch_{j}} $ &Cytosolic \ca concentration in the \gls{ec} \\
- 67 &    $-\frac{1}{C_{m_{j}}} ( I_{K_{j}}+I_{R_{j}}) $ & Membrane potential of the \gls{ec} \\
- 68 &    $- V^{SMC-EC}_{coupling_{j}} $ &  Membrane potential of the \gls{ec}\\
+ 66 &    $ J_{stretch_{j}} $ &Cytosolic \ca concentration in the \gls{ec} \\
+ 67 &    $-\frac{1}{C_{m_{j}}} ( I_{K_{j}}+I_{R_{j}}) $ & Membrane potential of the \gls{ec} \todo[inline]{67 is another one where I couldn't figure out a way to change it without accidentally breaking something}\\
  69 &    $ J_{PLC}$ &\ip concentration of the \gls{ec} \\
- 70 &    $- J_{degrad_{j}}  $ &\ip concentration of the \gls{ec} \\
- 71 &    $- J^{SMC-EC}_{IP_{3}-coupling_{j}}$ & \ip concentration of the \gls{ec}\\
+ 70 &    $ J_{degrad_{j}}  $ &\ip concentration of the \gls{ec} \\
+ 71 &    $ J^{SMC-EC}_{IP_{3}-coupling_{j}}$ & \ip concentration of the \gls{ec}\\
 	\hline
 	\label{tab:table1}
 \end{longtable}
@@ -276,7 +272,7 @@ Table \ref{tab:table1}
 %70& IP3 degradation  &$J_{degrad_{j}}= k_{dj} IP3_{j}$ &35.7783 &50.7781 &45.2309\\
 %71& IP3 coupling between SMC and EC& $ J^{SMC-EC}_{IP_{3}-coupling_{j}}=IP_{3,coup}(I_i-I_j)$ & & & \\
 %\end{longtable}
-Table \ref{tab:table2}
+Table \ref{tab:table2}\todo[inline]{From original reaction list, needs redone}
 \begin{longtable}[h!] { p{0.05\linewidth}  p{0.2\linewidth} p{0.1\linewidth}  p{0.10\linewidth} p{0.10\linewidth} p{0.1\linewidth}   p{0.2\linewidth} }
 \hline
 Rctn no.	&	Reaction name &1-norm&2-norm&inf-norm&(location of max) & equation\\
@@ -353,7 +349,7 @@ Rctn no.	&	Reaction name &1-norm&2-norm&inf-norm&(location of max) & equation\\
 70&	IP3 concentration of the EC	&49.3683	&	7.14973	&	10.1178&	AMp\\
 \label{tab:table2}
 \end{longtable}
-Table \ref{tab:table3} lists the reaction along with the error associated with the removal of that specific reaction when compared to the experiments of Berwick et al. 
+Table \ref{tab:table3} lists the reaction along with the error associated with the removal of that specific reaction when compared to the experiments of Berwick et al. \todo[inline]{From original reaction list, needs redone}
 Table \ref{tab:table3}
 \begin{longtable}[h!] { p{0.05\linewidth}  p{0.3\linewidth} p{0.3\linewidth}   p{0.3\linewidth} }
 	\hline
@@ -432,6 +428,7 @@ Rctn no.	&	Reaction name & normalized HBO Error; 2-norm	& normalized HBR Error; 
 \label{tab:table3}
 \end{longtable}
 \section{Notes on Table \ref{tab:table3} above}
+\todo[inline]{Whole section references old results, needs redone}
 We should note that removing reaction 7 given by the \na and \hco flux through the NBC channel (\mus): 
 \begin{equation} \label{eq:J_NBC}
 J_{NBC_k}=G_{NBC_k}\left(  v_k -E_{NBC_k}  \right)
@@ -462,7 +459,7 @@ Reaction 61 defines the \Gls{cicr} mechanism in the EC given by:
 J_{CICR_{j}} = C_{j}\frac{s_j^{2}}{s_{cj}^{2}+s_j^{2}}    \frac{Ca_j^{4}}{c_{cj}^{4}+Ca_j^{4}}
 \end{equation}
 Table \ref{tab:Table4} shows the reactions ranked from smallest to largest for the error between the numerical output and the experiment for HbR.\\
-Table \ref{tab:Table4}.
+Table \ref{tab:Table4}.\todo[inline]{From original reaction list, needs redone}
 \begin{longtable}[h!] { p{0.05\linewidth}  p{0.3\linewidth}   p{0.3\linewidth} }
 	\hline
 Rctn no	&	normalized HBO Error; 2-norm	& normalized HBR Error; 2-norm\\
