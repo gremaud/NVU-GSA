@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  5 MAY 2021 11:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  5 MAY 2021 11:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1090,21 +1090,16 @@ Overfull \hbox (29.49998pt too wide) in paragraph at lines 112--112
  []
 
 
-Overfull \hbox (29.49998pt too wide) in paragraph at lines 113--113
-[] 
- []
-
-
-Overfull \hbox (35.99998pt too wide) in alignment at lines 116--139
+Overfull \hbox (35.99998pt too wide) in alignment at lines 115--138
  [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 139
+Underfull \vbox (badness 10000) detected at line 138
  []
 
 
-Overfull \hbox (35.99998pt too wide) in alignment at lines 139--160
+Overfull \hbox (35.99998pt too wide) in alignment at lines 138--159
  [] [] [] 
  []
 
@@ -1120,53 +1115,58 @@ Overfull \hbox (35.99998pt too wide) in alignment at lines 139--160
 
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (35.99998pt too wide) in alignment at lines 160--180
+Overfull \hbox (35.99998pt too wide) in alignment at lines 159--179
  [] [] [] 
  []
 
 
-Overfull \hbox (35.99998pt too wide) in alignment at lines 180--194
+Overfull \hbox (35.99998pt too wide) in alignment at lines 179--193
  [] [] [] 
  []
 
 [2]
-Overfull \hbox (29.49998pt too wide) in paragraph at lines 273--273
+Overfull \hbox (29.49998pt too wide) in paragraph at lines 272--272
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--276
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
 []|\OT1/ptm/m/n/10 Rctn
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 278--278
+Underfull \hbox (badness 1132) in paragraph at lines 277--277
 []|\OT1/ptm/m/n/10 potassium ([]K$[]$) chan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 []|[]\OT1/ptm/m/n/10 K$[]$ sodium ([]Na$[]$)-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 \OT1/ptm/m/n/10 through the NKCC1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--281
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
 \OT1/ptm/m/n/10 the KCC1 chan-nel
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 283--283
+Underfull \hbox (badness 1210) in paragraph at lines 282--282
 []|[]\OT1/ptm/m/n/10 Na$[]$ flux through the
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 284--284
+Underfull \hbox (badness 2478) in paragraph at lines 283--283
 []|[]\OT1/ptm/m/n/10 Na$[]$ and HCO3 flux
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 285--285
+[]|\OT1/ptm/m/n/10 flux of []Ca$[]$ through
  []
 
 
@@ -1180,13 +1180,13 @@ Underfull \hbox (badness 1377) in paragraph at lines 287--287
  []
 
 
-Underfull \hbox (badness 1377) in paragraph at lines 288--288
-[]|\OT1/ptm/m/n/10 flux of []Ca$[]$ through
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+\OT1/ptm/m/n/10 the leak chan-nel
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--288
-\OT1/ptm/m/n/10 the leak chan-nel
+Underfull \hbox (badness 1377) in paragraph at lines 288--288
+[]|\OT1/ptm/m/n/10 flux of []Ca$[]$ through
  []
 
 
@@ -1195,57 +1195,57 @@ Underfull \hbox (badness 1377) in paragraph at lines 289--289
  []
 
 
-Underfull \hbox (badness 1377) in paragraph at lines 290--290
-[]|\OT1/ptm/m/n/10 flux of []Ca$[]$ through
- []
-
-
-Underfull \hbox (badness 7064) in paragraph at lines 290--290
+Underfull \hbox (badness 7064) in paragraph at lines 289--289
 \OT1/ptm/m/n/10 CICR into as-tro-cytic
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 292--292
+Underfull \hbox (badness 1205) in paragraph at lines 291--291
 []|\OT1/ptm/m/n/10 Rate con-stant for IP3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--293
+Underfull \hbox (badness 10000) in paragraph at lines 292--292
 \OT1/ptm/m/n/10 epoxye-icosatrienoic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--294
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
 []|\OT1/ptm/m/n/10 degredation of as-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--294
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
 \OT1/ptm/m/n/10 tro-cytic epoxye-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--294
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
 \OT1/ptm/m/n/10 icosatrienoic acid
  []
 
 
-Underfull \hbox (badness 1117) in paragraph at lines 295--295
+Underfull \hbox (badness 1117) in paragraph at lines 294--294
 \OT1/ptm/m/n/10 potas-sium (BK) chan-
  []
 
 
-Overfull \hbox (12.73595pt too wide) in alignment at lines 274--296
+Overfull \hbox (12.73595pt too wide) in alignment at lines 273--295
  [] [] [] [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 296
+Underfull \vbox (badness 10000) detected at line 295
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--296
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 []|[]\OT1/ptm/m/n/10 chlorine (Cl$[]$) flux
+ []
+
+
+Underfull \hbox (badness 2635) in paragraph at lines 300--300
+[]|\OT1/ptm/m/n/10 TRPV4 chan-nel open
  []
 
 
@@ -1254,83 +1254,83 @@ Underfull \hbox (badness 2635) in paragraph at lines 301--301
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 302--302
-[]|\OT1/ptm/m/n/10 TRPV4 chan-nel open
- []
-
-
-Overfull \hbox (19.86163pt too wide) in paragraph at lines 304--305
+Overfull \hbox (19.86163pt too wide) in paragraph at lines 303--304
 []|$[]$| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--305
+Underfull \hbox (badness 10000) in paragraph at lines 304--304
 []|[]\OT1/ptm/m/n/10 K$[]$ con-cen-tra-tion in
  []
 
 
-Underfull \hbox (badness 1394) in paragraph at lines 305--305
+Underfull \hbox (badness 1394) in paragraph at lines 304--304
 \OT1/ptm/m/n/10 the perivas-cu-lar space
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 305--306
+Underfull \hbox (badness 4391) in paragraph at lines 304--305
 []|\OT1/ptm/m/n/10 possible rep-e-ti-tion of
  []
 
 
-Underfull \hbox (badness 6725) in paragraph at lines 308--308
+Underfull \hbox (badness 6725) in paragraph at lines 307--307
 []|\OT1/ptm/m/n/10 calcium ([]Ca$[]$) con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--313
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
 \OT1/ptm/m/n/10 smooth mus-cle cell
  []
 
 
-Overfull \hbox (12.73595pt too wide) in alignment at lines 296--316
+Overfull \hbox (12.73595pt too wide) in alignment at lines 295--315
  [] [] [] [] [] [] [] 
  []
 
 [3]
+Underfull \hbox (badness 1365) in paragraph at lines 326--326
+\OT1/ptm/m/n/10 of []Ca$[]$-activated []K$[]$
+ []
+
+
 Underfull \hbox (badness 1365) in paragraph at lines 327--327
 \OT1/ptm/m/n/10 of []Ca$[]$-activated []K$[]$
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 328--328
-\OT1/ptm/m/n/10 of []Ca$[]$-activated []K$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
+Underfull \hbox (badness 10000) in paragraph at lines 328--328
 []|\OT1/ptm/m/n/10 inositol trispho-s-phate
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 329--329
+Underfull \hbox (badness 1418) in paragraph at lines 328--328
 \OT1/ptm/m/n/10 (IP3) con-cen-tra-tion in
  []
 
 
-Overfull \hbox (23.32976pt too wide) in paragraph at lines 334--335
+Overfull \hbox (23.32976pt too wide) in paragraph at lines 333--334
 []|$[][]$| 
  []
 
 
-Overfull \hbox (12.73595pt too wide) in alignment at lines 316--336
+Overfull \hbox (12.73595pt too wide) in alignment at lines 315--335
  [] [] [] [] [] [] [] 
  []
 
 [4]
-Underfull \hbox (badness 6691) in paragraph at lines 336--336
+Underfull \hbox (badness 6691) in paragraph at lines 335--335
 []|\OT1/ptm/m/n/10 Cytosolic []Ca$[]$ con-
  []
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 336--336
+Underfull \hbox (badness 3525) in paragraph at lines 335--335
 \OT1/ptm/m/n/10 cen-tra-tion in the en-
+ []
+
+
+Underfull \hbox (badness 6691) in paragraph at lines 336--336
+[]|\OT1/ptm/m/n/10 Cytosolic []Ca$[]$ con-
  []
 
 
@@ -1349,13 +1349,13 @@ Underfull \hbox (badness 6691) in paragraph at lines 339--339
  []
 
 
-Underfull \hbox (badness 6691) in paragraph at lines 340--340
-[]|\OT1/ptm/m/n/10 Cytosolic []Ca$[]$ con-
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
+\OT1/ptm/m/n/10 cen-tra-tion in the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--340
-\OT1/ptm/m/n/10 cen-tra-tion in the
+Underfull \hbox (badness 6691) in paragraph at lines 340--340
+[]|\OT1/ptm/m/n/10 Cytosolic []Ca$[]$ con-
  []
 
 
@@ -1369,1370 +1369,1365 @@ Underfull \hbox (badness 6691) in paragraph at lines 342--342
  []
 
 
-Underfull \hbox (badness 6691) in paragraph at lines 343--343
-[]|\OT1/ptm/m/n/10 Cytosolic []Ca$[]$ con-
- []
-
-
-Overfull \hbox (12.73595pt too wide) in alignment at lines 336--349
+Overfull \hbox (12.73595pt too wide) in alignment at lines 335--348
  [] [] [] [] [] [] [] 
  []
 
 [5] [6]
-Overfull \hbox (29.49998pt too wide) in paragraph at lines 350--350
+Overfull \hbox (29.49998pt too wide) in paragraph at lines 349--349
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []|\OT1/ptm/m/n/10 Rctn
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 364--364
+Underfull \hbox (badness 2042) in paragraph at lines 363--363
 []|\OT1/ptm/m/n/10 flux of Ca2+ through the IP3R
  []
 
 
-Underfull \hbox (badness 2111) in paragraph at lines 371--371
+Underfull \hbox (badness 2111) in paragraph at lines 370--370
 []|\OT1/ptm/m/n/10 production of as-tro-cytic epoxye-
  []
 
 
-Overfull \hbox (24.24774pt too wide) in alignment at lines 352--374
+Overfull \hbox (24.24774pt too wide) in alignment at lines 351--373
  [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 374
+Underfull \vbox (badness 10000) detected at line 373
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--384
+Underfull \hbox (badness 10000) in paragraph at lines 383--383
 []|\OT1/ptm/m/n/10 K+ con-cen-tra-tion in the PVS
  []
 
 
-Overfull \hbox (24.24774pt too wide) in alignment at lines 374--394
+Overfull \hbox (24.24774pt too wide) in alignment at lines 373--393
  [] [] [] [] 
  []
 
 [7]
+Underfull \hbox (badness 1642) in paragraph at lines 404--404
+[]|\OT1/ptm/m/n/10 Open state prob-a-bil-ity of Ca2+-
+ []
+
+
 Underfull \hbox (badness 1642) in paragraph at lines 405--405
 []|\OT1/ptm/m/n/10 Open state prob-a-bil-ity of Ca2+-
  []
 
 
-Underfull \hbox (badness 1642) in paragraph at lines 406--406
-[]|\OT1/ptm/m/n/10 Open state prob-a-bil-ity of Ca2+-
- []
-
-
-Overfull \hbox (24.24774pt too wide) in alignment at lines 394--414
+Overfull \hbox (24.24774pt too wide) in alignment at lines 393--413
  [] [] [] [] 
  []
 
 
-Overfull \hbox (24.24774pt too wide) in alignment at lines 414--427
+Overfull \hbox (24.24774pt too wide) in alignment at lines 413--426
  [] [] [] [] 
  []
 
 [8]
-Overfull \hbox (29.49998pt too wide) in paragraph at lines 429--429
+Overfull \hbox (29.49998pt too wide) in paragraph at lines 428--428
 [] 
  []
 
 [9]
-Overfull \hbox (29.49998pt too wide) in paragraph at lines 460--460
+Overfull \hbox (29.49998pt too wide) in paragraph at lines 459--459
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--463
+Underfull \hbox (badness 10000) in paragraph at lines 462--462
 []|\OT1/ptm/m/n/10 Rctn
  []
 
 
-Underfull \vbox (badness 10000) detected at line 483
+Underfull \vbox (badness 10000) detected at line 482
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 []|\OT1/ptm/m/n/10 41
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Cy-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 toso-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 lic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Ca2+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 SMC
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0116207
  []
 
 
-Overfull \hbox (23.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (23.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.00582014
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 19
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0125768
  []
 
 
-Overfull \hbox (23.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (23.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.00589543
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 into
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 SC
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 based
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 ex-tra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 cel-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 lu-lar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 K+
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0135393
  []
 
 
-Overfull \hbox (23.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (23.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.00639256
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 39
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Cy-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 toso-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 lic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Ca2+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 SMC
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0144208
  []
 
 
-Overfull \hbox (23.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (23.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.00701218
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 47
  []
 
 
-Overfull \hbox (0.68019pt too wide) in paragraph at lines 507--536
+Overfull \hbox (0.68019pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Mem-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 brane
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 po-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 ten-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tial
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 SMC
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0149869
  []
 
 
-Overfull \hbox (23.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (23.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.00710705
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 50
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Open
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 state
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 prob-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 a-bil-
  []
 
 
-Overfull \hbox (1.32022pt too wide) in paragraph at lines 507--536
+Overfull \hbox (1.32022pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Ca2+-
  []
 
 
-Overfull \hbox (11.83995pt too wide) in paragraph at lines 507--536
+Overfull \hbox (11.83995pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 activated
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 K+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 chan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 nels
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0149869
  []
 
 
-Overfull \hbox (23.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (23.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.00710705
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 58
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 20-
  []
 
 
-Overfull \hbox (1.79044pt too wide) in paragraph at lines 507--536
+Overfull \hbox (1.79044pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 HETE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 SMC
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0149869
  []
 
 
-Overfull \hbox (23.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (23.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.00710705
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 62
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Cy-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 toso-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 lic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Ca2+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 cen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 EC
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0155095
  []
 
 
-Overfull \hbox (23.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (23.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.00716025
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 6
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Na+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 flux
  []
 
 
-Overfull \hbox (7.35036pt too wide) in paragraph at lines 507--536
+Overfull \hbox (7.35036pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 through
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Na+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 chan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 nel
  []
 
 
-Overfull \hbox (13.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (13.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.017721
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0073648
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 28
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 K+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 cen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tion
  []
 
 
-Overfull \hbox (7.95009pt too wide) in paragraph at lines 507--536
+Overfull \hbox (7.95009pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 perivas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 cu-lar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 space
  []
 
 
-Overfull \hbox (1.24026pt too wide) in paragraph at lines 507--536
+Overfull \hbox (1.24026pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 (PVS)
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0191541
  []
 
 
-Overfull \hbox (23.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (23.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.00773728
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 18
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0191554
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0077376
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 20
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0191554
  []
 
 
-Overfull \hbox (23.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (23.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.00773761
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 48
  []
 
 
-Overfull \hbox (0.68019pt too wide) in paragraph at lines 507--536
+Overfull \hbox (0.68019pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Mem-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 brane
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 po-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 ten-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tial
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 SMC
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0199942
  []
 
 
-Overfull \hbox (23.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (23.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.00790603
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 51
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Open
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 state
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 prob-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 a-bil-
  []
 
 
-Overfull \hbox (1.32022pt too wide) in paragraph at lines 507--536
+Overfull \hbox (1.32022pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Ca2+-
  []
 
 
-Overfull \hbox (11.83995pt too wide) in paragraph at lines 507--536
+Overfull \hbox (11.83995pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 activated
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 K+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 chan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 nels
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0190485
  []
 
 
-Overfull \hbox (23.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (23.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.00847316
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Ca2+
  []
 
 
-Overfull \hbox (7.35036pt too wide) in paragraph at lines 507--536
+Overfull \hbox (7.35036pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 through
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 IP3R
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 chan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 nel
  []
 
 
-Overfull \hbox (13.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (13.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.029407
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0101798
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 14
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 rate
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 IP3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 duc-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 as-tro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 cyte
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 due
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 glu-ta-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 mate
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 cep-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tors
  []
 
 
-Overfull \hbox (13.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (13.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.029407
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0101798
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 22
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 in-ac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 ti-va-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 vari-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 able
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 as-tro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 cytic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 IP3R
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 chan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 nel
  []
 
 
-Overfull \hbox (13.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (13.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.029407
  []
 
 
-Overfull \hbox (18.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (18.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.0101798
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 55
  []
 
 
-Overfull \hbox (6.78017pt too wide) in paragraph at lines 507--536
+Overfull \hbox (6.78017pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Arachi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 donic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 acid
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 SMC
  []
 
 
-Overfull \hbox (8.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (8.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 5.60641
  []
 
 
-Overfull \hbox (8.74051pt too wide) in paragraph at lines 507--536
+Overfull \hbox (8.74051pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 0.82813
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 1
  []
 
 
-Overfull \hbox (0.68019pt too wide) in paragraph at lines 507--536
+Overfull \hbox (0.68019pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 potas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 sium
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 (K+)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 chan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 nel
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 507--536
+Underfull \hbox (badness 1163) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 2 K+
  []
 
 
-Overfull \hbox (5.69019pt too wide) in paragraph at lines 507--536
+Overfull \hbox (5.69019pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 sodium
  []
 
 
-Overfull \hbox (3.53018pt too wide) in paragraph at lines 507--536
+Overfull \hbox (3.53018pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 (Na+)-
  []
 
 
-Overfull \hbox (6.64027pt too wide) in paragraph at lines 507--536
+Overfull \hbox (6.64027pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 ATPase
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 pump
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 into
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 SC
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 based
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 ex-tra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 cel-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 lu-lar
  []
 
 
-Overfull \hbox (4.01028pt too wide) in paragraph at lines 507--536
+Overfull \hbox (4.01028pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 JKNE-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 toSC
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 21
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 31
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 cal-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 cium
  []
 
 
-Overfull \hbox (4.65018pt too wide) in paragraph at lines 507--536
+Overfull \hbox (4.65018pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 (Ca2+)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 cen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 PVS
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 33
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Ca2+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 cen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 PVS
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 40
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Cy-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 toso-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 lic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Ca2+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 SMC
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 45
  []
 
 
-Overfull \hbox (0.68019pt too wide) in paragraph at lines 507--536
+Overfull \hbox (0.68019pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 Mem-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 brane
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 po-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 ten-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tial
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 SMC
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 os-i-tol
  []
 
 
-Overfull \hbox (7.3501pt too wide) in paragraph at lines 507--536
+Overfull \hbox (7.3501pt too wide) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 trispho-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 s-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 phate
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 (IP3)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 cen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 SMC
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 70
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 IP3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 cen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 EC
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--536
+Underfull \hbox (badness 10000) in paragraph at lines 506--535
 \OT1/ptm/m/n/10 NaN
  []
 
@@ -2746,22 +2741,22 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 537.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 537.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 536.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 536.
 (./Reaction_List.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 537.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 537.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 536.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 536.
 Package rerunfilecheck Info: File `Reaction_List.out' has not changed.
 (rerunfilecheck)             Checksum: 44E540525B11F9A53F9D2008217FD767;167.
  ) 
 Here is how much of TeX's memory you used:
- 29561 strings out of 480608
- 557313 string characters out of 5903631
- 873214 words of memory out of 5000000
- 44860 multiletter control sequences out of 15000+600000
+ 29558 strings out of 480608
+ 557262 string characters out of 5903631
+ 872165 words of memory out of 5000000
+ 44858 multiletter control sequences out of 15000+600000
  552150 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,10n,96p,1202b,864s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,10n,96p,1202b,862s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -2775,10 +2770,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2020/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-d
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb>
-Output written on Reaction_List.pdf (12 pages, 156795 bytes).
+Output written on Reaction_List.pdf (12 pages, 156710 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 140 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
+ 182 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
  133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
