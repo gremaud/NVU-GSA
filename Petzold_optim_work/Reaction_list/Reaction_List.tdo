@@ -1,14 +1,6 @@
 \contentsline {todo}{Double check that all of the reaction descriptions are still correct after Robin edits}{1}{section*.1}%
 \contentsline {todo}{Fix numbering changes from Robin edits}{1}{section*.2}%
-\contentsline {todo}{For reactions 15, 16, and 17 I wasn't quite sure how to handle it. I changed them to just be a single parameter, but I am not sure if that parameter also effects other parts of the model}{2}{section*.3}%
-\contentsline {todo}{I changed 20 and 21 so that reaction 21 toggles whether w\_k is constant or not}{2}{section*.4}%
-\contentsline {todo}{I changed 22 and 22 so that reaction 22 toggles whether h\_k is constant or not}{2}{section*.5}%
-\contentsline {todo}{I changed 24 and 25 so that reaction 25 toggles whether m\_k is constant or not}{2}{section*.6}%
-\contentsline {todo}{I don't know how to handle 26 and 27. 26 I could very carefully check the code for spaces where it was written AA\_k-AA\_i, but there is still a chance I would make a mistake. 27 I don't know what to do with at all.}{3}{section*.7}%
-\contentsline {todo}{My changes to 50 and 51 make it so that reaction 50 turns off part of an ODE and reaction 51 turns off that same part of the ODE as well as the rest of it. I am not sure if we should keep this or remove (my edited) reaction 50}{3}{section*.8}%
-\contentsline {todo}{I am not sure what to do about 54, 55, 56, and 57. I think it would be very easy for me to mess things up/create a division by 0 error.}{4}{section*.9}%
-\contentsline {todo}{67 is another one where I couldn't figure out a way to change it without accidentally breaking something}{4}{section*.10}%
-\contentsline {todo}{From original reaction list, needs redone}{4}{section*.11}%
-\contentsline {todo}{From original reaction list, needs redone}{8}{section*.12}%
-\contentsline {todo}{Whole section references old results, needs redone}{10}{section*.13}%
-\contentsline {todo}{From original reaction list, needs redone}{11}{section*.14}%
+\contentsline {todo}{From original reaction list, needs redone}{3}{section*.3}%
+\contentsline {todo}{From original reaction list, needs redone}{7}{section*.4}%
+\contentsline {todo}{Whole section references old results, needs redone}{9}{section*.5}%
+\contentsline {todo}{From original reaction list, needs redone}{10}{section*.6}%

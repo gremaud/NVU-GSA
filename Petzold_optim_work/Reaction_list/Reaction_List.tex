@@ -118,79 +118,77 @@ Table \ref{tab:table1}
 	Reaction     &    Description &  \\
 	\hline
 &  &  \textbf{Astrocyte and Synaptic Cleft...........}	 \\
-1	&    $J_{K_k}$			& \pot channel				\\
-2	&   $J_{NaK_k}$ 			& \pot \na -ATPase pump \\
-3	&   	 $J_{NKCC1_k}$ 	    	& \na, \pot and Cl flux through the NKCC1 channel\\
-4	& 	  $J_{KCC1_k}$ 		&  Cl and \pot flux through the KCC1 channel \\		
-5	& 	  $J_{KNEtoSC}$			& flux of \pot into the SC based on the extracellular \pot  \\ 
-6	& 	  $J_{Na_k}$		& \na flux through the \na channel   \\ 
-7	& 	  $J_{NBC_k}$	& \na and HCO3 flux through the NBC channel  \\ 
-8	&	  $J_{NaNEtoSC},$ 	& flux of \na into the SC based on the extracellular \pot =  $J_{KNEtoSC}$\\
-9	& 	   $J_{IP3_k}$  & flux of \ca through the IP3R channel \\
-10	& 	  $J_{pump_k}$	& flux of \ca through the uptake pump \\
-11 & 	  $J_{ERleak_k}$ & flux of \ca through the leak channel\\
-12	& 	  $J_{TRPV_k}$ &flux of \ca through TRPV4 channel \\
-13	& 	  $J_{CICR_k}$  & flux of \ca through CICR into astrocytic cytosol \\
-14	& 	  $G$ &  rate of IP3 production in astrocyte due to glutamate receptors\\
-15	& 	   $k_{deg}$ & Rate constant for IP3 degradation in astrocyte\todo[inline]{For reactions 15, 16, and 17 I wasn't quite sure how to handle it. I changed them to just be a single parameter, but I am not sure if that parameter also effects other parts of the model}\\
-16	& 	   $V_{eet}$ & production of astrocytic epoxyeicosatrienoic acid (EET) concentration\\
-17	& 	   $k_{eet}$ & degredation of astrocytic epoxyeicosatrienoic acid (EET) concentration\\
-18	& 	   $J_{BK_k}$ & \\
-19	& 	   $J_{Cl_k}$ & \\
-21	& 	   $\phi_n$ & \todo[inline]{I changed 20 and 21 so that reaction 21 toggles whether w\_k is constant or not}\\
-22	& 	  $k_{on}  $ & inactivation variable $h_k$ of the astrocytic IP$_3$R channel \todo[inline]{I changed 22 and 22 so that reaction 22 toggles whether h\_k is constant or not}\\
+1	&    $J_{K_k} \rightarrow 0$			& \pot channel				\\
+2	&   $J_{NaK_k}\rightarrow 0$ 			& \pot \na -ATPase pump \\
+3	&   	 $J_{NKCC1_k}\rightarrow 0$ 	    	& \na, \pot and Cl flux through the NKCC1 channel\\
+4	& 	  $J_{KCC1_k}\rightarrow 0$ 		&  Cl and \pot flux through the KCC1 channel \\		
+5	& 	  $J_{KNEtoSC}\rightarrow 0$			& flux of \pot into the SC based on the extracellular \pot  \\ 
+6	& 	  $J_{Na_k}\rightarrow 0$		& \na flux through the \na channel   \\ 
+7	& 	  $J_{NBC_k}\rightarrow 0$	& \na and HCO3 flux through the NBC channel  \\ 
+8	&	  $J_{NaNEtoSC}\rightarrow 0$ 	& flux of \na into the SC based on the extracellular \pot =  $J_{KNEtoSC}$\\
+9	& 	   $J_{IP3_k}\rightarrow 0$  & flux of \ca through the IP3R channel \\
+10	& 	  $J_{pump_k}\rightarrow 0$	& flux of \ca through the uptake pump \\
+11 & 	  $J_{ERleak_k}\rightarrow 0$ & flux of \ca through the leak channel\\
+12	& 	  $J_{TRPV_k}\rightarrow 0$ &flux of \ca through TRPV4 channel \\
+13	& 	  $J_{CICR_k}\rightarrow 0$  & flux of \ca through CICR into astrocytic cytosol \\
+14	& 	  $G\rightarrow 0$ &  rate of IP3 production in astrocyte due to glutamate receptors\\
+15	& 	   $k_{deg}\rightarrow 0$ & Rate constant for IP3 degradation in astrocyte\\
+16	& 	   $V_{eet}\rightarrow 0$ & production of astrocytic epoxyeicosatrienoic acid (EET) concentration\\
+17	& 	   $k_{eet}\rightarrow 0$ & degredation of astrocytic epoxyeicosatrienoic acid (EET) concentration\\
+18	& 	   $J_{BK_k}\rightarrow 0$ & \\
+19	& 	   $J_{Cl_k}\rightarrow 0$ & \\
+20	& 	   $\phi_n\rightarrow 0$ & \\
+21	& 	  $k_{on}  \rightarrow 0$ & inactivation variable $h_k$ of the astrocytic IP$_3$R channel \\
 
-25	& 	   $trpv_{switch}$ & TRPV4 channel open probability \todo[inline]{I changed 24 and 25 so that reaction 25 toggles whether m\_k is constant or not}  \\
+22	& 	   $trpv_{switch}\rightarrow 0$ & TRPV4 channel open probability   \\
 	& 	    & \\
-26	& 	   $\frac{(AA_i - AA_k)}{\tau_{AA}}$ & concentration of arachidonic acid in the astrocyte $AA_k$. \todo[inline]{I don't know how to handle 26 and 27. 26 I could very carefully check the code for spaces where it was written AA\_k-AA\_i, but there is still a chance I would make a mistake. 27 I don't know what to do with at all.}\\
+23	& 	   $\tau_{AA}\rightarrow \infty$ & concentration of arachidonic acid in the astrocyte $AA_k$.\\
 	& 	    & \\ 
-27	& 	   $\frac{AA_m  AA_{max}}{(AA_m + max(Ca_k - Ca_0))^2 \frac{dCa_k}{dt}} $ & concentration of arachidonic acid in the astrocyte $AA_k$.\\
+24	& 	   $AA_{max}\rightarrow 0$ & concentration of arachidonic acid in the astrocyte $AA_k$. \\
  \textbf{PVS.....}& & \\
-28  &    $J_{BK_k}$ & \pot concentration in the \gls{pvs}\\
-29 &    $J_{KIR_i}$ & \pot concentration in the \gls{pvs}\\
-30 &    $K_{decay_p} $ & \pot concentration in the \gls{pvs}\\
-31 &    $J_{TRPV_k}$ &\ca concentration in the \gls{pvs}  \\
-32 &    $J_{VOCC_i} $ & \ca concentration in the \gls{pvs} \\
-33 &    $Ca_{decay_p} $ &  \ca concentration in the \gls{pvs}\\
+25  &    $J_{BK_k}\rightarrow 0$ & \pot concentration in the \gls{pvs}\\
+26 &    $J_{KIR_i}\rightarrow 0$ & \pot concentration in the \gls{pvs}\\
+37 &    $K_{decay_p} \rightarrow 0$ & \pot concentration in the \gls{pvs}\\
+28 &    $J_{TRPV_k}\rightarrow 0$ &\ca concentration in the \gls{pvs}  \\
+29 &    $J_{VOCC_i} \rightarrow 0$ & \ca concentration in the \gls{pvs} \\
+30 &    $Ca_{decay_p} \rightarrow 0$ &  \ca concentration in the \gls{pvs}\\
  \textbf{SMC ...........} &      &\\
-36 &    $ J_{IP_{3i}} $ & Cytosolic \ca in the \gls{smc}\\
-37 &    $J_{SR_{uptake_{i}}} $ & Cytosolic \ca in the \gls{smc}\\
-38 &    $ J_{CICR_{i}}$ & Cytosolic \ca in the \gls{smc} \\
-39 &    $J_{extrusion_{i}} $ &Cytosolic \ca in the \gls{smc} \\
-40 &    $  J_{SR_{leak_{i}}}$ & Cytosolic \ca in the \gls{smc}\\
-42 &    $ J_{Na/Ca_{i}} $ & Cytosolic \ca in the \gls{smc}\\
-43 &    $J_{stretch_{i}} $ & Cytosolic \ca in the \gls{smc}\\
-44 &    $J_{Ca^{2+}-coupling_{i}}^{SMC-EC} $ &Cytosolic \ca in the \gls{smc} \\
-45 &    $J_{NaK_{i}}$ & Membrane potential of the \gls{smc}\\
-46 &    $J_{Cl_{i}}  $ & Membrane potential of the \gls{smc}\\
-47 &    $ J_{K_{i}}$ & Membrane potential of the \gls{smc} \\
-48 &    $ J_{KIR_{i}} $ & Membrane potential of the \gls{smc}\\
-49 &    $V^{SMC-EC}_{coupling_{i}} $ &  Membrane potential of the \gls{smc}\\
-50 &    $ K_{act_{i}} $ & Open state probability of \ca-activated \pot channels\\
-51 &    $\lambda_{i}   $ &  Open state probability of \ca-activated \pot channels \todo[inline]{My changes to 50 and 51 make it so that reaction 50 turns off part of an ODE and reaction 51 turns off that same part of the ODE as well as the rest of it. I am not sure if we should keep this or remove (my edited) reaction 50}\\
+31 &    $ J_{IP_{3i}} \rightarrow 0$ & Cytosolic \ca in the \gls{smc}\\
+32 &    $J_{SR_{uptake_{i}}} \rightarrow 0$ & Cytosolic \ca in the \gls{smc}\\
+33 &    $ J_{CICR_{i}}\rightarrow 0$ & Cytosolic \ca in the \gls{smc} \\
+34 &    $J_{extrusion_{i}} \rightarrow 0$ &Cytosolic \ca in the \gls{smc} \\
+35 &    $  J_{SR_{leak_{i}}}\rightarrow 0$ & Cytosolic \ca in the \gls{smc}\\
+36 &    $ J_{Na/Ca_{i}} \rightarrow 0$ & Cytosolic \ca in the \gls{smc}\\
+37 &    $J_{stretch_{i}} \rightarrow 0$ & Cytosolic \ca in the \gls{smc}\\
+38 &    $J_{Ca^{2+}-coupling_{i}}^{SMC-EC} \rightarrow 0$ &Cytosolic \ca in the \gls{smc} \\
+39 &    $J_{NaK_{i}}\rightarrow 0$ & Membrane potential of the \gls{smc}\\
+40 &    $J_{Cl_{i}}  \rightarrow 0$ & Membrane potential of the \gls{smc}\\
+41 &    $ J_{K_{i}}\rightarrow 0$ & Membrane potential of the \gls{smc} \\
+42 &    $ J_{KIR_{i}} \rightarrow 0$ & Membrane potential of the \gls{smc}\\
+43 &    $V^{SMC-EC}_{coupling_{i}} \rightarrow 0$ &  Membrane potential of the \gls{smc}\\
+44 &    $\lambda_{i}   \rightarrow 0$ &  Open state probability of \ca-activated \pot channels \\
  &   &  \textbf{fluxes for \pot in SMC are 45, 47, 48 divided by $\gamma_v$} \\
-52 &    $ J_{degrad_{i}}$ & \ip concentration in the \gls{smc}\\
+45 &    $ J_{degrad_{i}}\rightarrow 0$ & \ip concentration in the \gls{smc}\\
  &   &  \\
-53 &    $ J^{SMC-EC}_{IP_{3}-coupling_{i}}$ & \ip concentration in the \gls{smc}\\
-54 &    $ \frac{AA_{k}}{\tau_{AA}}$ &Arachidonic acid in the \gls{smc} \\
- & &      \\
-55 &    $ \frac{-AA_i}{\tau_{AA}}$ &Arachidonic acid in the \gls{smc} \\
-56 &    $\frac{1}{1+{exp(\frac{(NO_i-NO_{rest})}{R_{NO}}})}\frac{V_a AA_i}{K_a+AA_i} $ & 20-HETE in the \gls{smc} \\
-57 &    $ \frac{V_f AA_i}{K_f+AA_i}$ &  20-HETE in the \gls{smc}\todo[inline]{I am not sure what to do about 54, 55, 56, and 57. I think it would be very easy for me to mess things up/create a division by 0 error.}\\
-58 &    $ \lambda_h$ & 20-HETE in the \gls{smc} \\
+46 &    $ J^{SMC-EC}_{IP_{3}-coupling_{i}}\rightarrow 0$ & \ip concentration in the \gls{smc}\\
+47 & $NO_{rest} \rightarrow -\infty $ & 20-HETE in the \gls{smc} \\
+48 & $V_a \rightarrow 0$ & 20-HETE in the \gls{smc} \\
+49 &    $ V_f\rightarrow 0$ &  20-HETE in the \gls{smc}\\
+50 &    $ \lambda_h\rightarrow 0$ & 20-HETE in the \gls{smc} \\
  \textbf{EC ...........}   &  & \\
- 59 &    $ J_{IP_{3j}}$ & Cytosolic \ca concentration in the \gls{ec} \\
- 60 &    $ J_{ER_{uptake_{j}}} $ &  Cytosolic \ca concentration in the \gls{ec}\\
- 61 &    $J_{CICR_{j}} $ &Cytosolic \ca concentration in the \gls{ec} \\
- 62 &    $ J_{extrusion_{j}} $ & Cytosolic \ca concentration in the \gls{ec}\\
- 63 &    $J_{ER_{leak_{j}}} $ &Cytosolic \ca concentration in the \gls{ec} \\
- 64 &    $ J_{cation_{j}}$ & Cytosolic \ca concentration in the \gls{ec}\\
- 65 &    $ J_{0_{j}}$ & Cytosolic \ca concentration in the \gls{ec}\\
- 66 &    $ J_{stretch_{j}} $ &Cytosolic \ca concentration in the \gls{ec} \\
- 67 &    $-\frac{1}{C_{m_{j}}} ( I_{K_{j}}+I_{R_{j}}) $ & Membrane potential of the \gls{ec} \todo[inline]{67 is another one where I couldn't figure out a way to change it without accidentally breaking something}\\
- 69 &    $ J_{PLC}$ &\ip concentration of the \gls{ec} \\
- 70 &    $ J_{degrad_{j}}  $ &\ip concentration of the \gls{ec} \\
- 71 &    $ J^{SMC-EC}_{IP_{3}-coupling_{j}}$ & \ip concentration of the \gls{ec}\\
+ 51 &    $ J_{IP_{3j}}\rightarrow 0$ & Cytosolic \ca concentration in the \gls{ec} \\
+ 52 &    $ J_{ER_{uptake_{j}}}\rightarrow 0 $ &  Cytosolic \ca concentration in the \gls{ec}\\
+ 53 &    $J_{CICR_{j}} \rightarrow 0$ &Cytosolic \ca concentration in the \gls{ec} \\
+ 54 &    $ J_{extrusion_{j}} \rightarrow 0$ & Cytosolic \ca concentration in the \gls{ec}\\
+ 55 &    $J_{ER_{leak_{j}}} \rightarrow 0$ &Cytosolic \ca concentration in the \gls{ec} \\
+ 56 &    $ J_{cation_{j}}\rightarrow 0$ & Cytosolic \ca concentration in the \gls{ec}\\
+ 57 &    $ J_{0_{j}}\rightarrow 0$ & Cytosolic \ca concentration in the \gls{ec}\\
+ 58 &    $ J_{stretch_{j}} \rightarrow 0$ &Cytosolic \ca concentration in the \gls{ec} \\
+ 59 & $G_{cat_j} \rightarrow 0$ &Membrane potential of the \gls{ec} \\
+ 60 & $ G_{r_j} \rightarrow 0 $ &Membrane potential of the \gls{ec} \\
+ 61 &    $ J_{PLC}$ &\ip concentration of the \gls{ec} \\
+ 62 &    $ J_{degrad_{j}}  $ &\ip concentration of the \gls{ec} \\
+ 63 &    $ J^{SMC-EC}_{IP_{3}-coupling_{j}}$ & \ip concentration of the \gls{ec}\\
 	\hline
 	\label{tab:table1}
 \end{longtable}
