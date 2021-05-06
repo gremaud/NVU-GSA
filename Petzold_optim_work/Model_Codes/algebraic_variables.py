@@ -77,7 +77,7 @@ def set_algebraic_variables(p,u, t, idx, input_data, total_waveform, location,ch
     a.I_Ca_tot = a.I_Ca * (p.n_NR2A * a.w_NR2A + p.n_NR2B * a.w_NR2B)   # [fA]  
     
     a.rho = p.rho_min + (p.rho_max - p.rho_min) * a.Glu/p.Glu_max
-    a.G = (a.rho + p.delta) / (p.K_G + a.rho + p.delta)
+    a.G = V_d[14]*(a.rho + p.delta) / (p.K_G + a.rho + p.delta)
 ############################################################################            
                                     
     a.CaM = v.Ca_n / p.m_c                 # [uM]        
@@ -90,7 +90,7 @@ def set_algebraic_variables(p,u, t, idx, input_data, total_waveform, location,ch
     a.dKedt = -p.beta_K_e * (v.K_e - p.K_eBase) + (p.alpha_K_e * p.beta_K_e) * ((abs(v.E_t - v.I_t) - p.EImin)/ (p.EI_relative - p.EImin))          # K_e derivative as neuron activation in Ostby            
     
     a.J_K_NEtoSC = V_d[5]*(p.k_syn * a.dKedt * 1e3)                                   # Input flux: K+ flux into SC
-    a.J_Na_NEtoSC = V_d[8]*(-p.k_syn * a.dKedt * 1e3)                                 # Input flux: Na+ flux out of SC
+    a.J_Na_NEtoSC =V_d[8]*(-p.k_syn * a.dKedt * 1e3)                                 # Input flux: Na+ flux out of SC
     
     #%%
     ''' Astrocyte'''
@@ -112,8 +112,8 @@ def set_algebraic_variables(p,u, t, idx, input_data, total_waveform, location,ch
     # Fluxes
     a.J_BK_k = V_d[18]*(p.G_BK_k * v.w_k * (v.v_k - a.E_BK_k))                      # BK flux (uM/ms)
     a.J_BK_p = a.J_BK_k / p.VR_pa                                     # K+ influx into the PVS (uM/ms)
-    a.J_K_k = V_d[1]*(p.G_K_k * (v.v_k - a.E_K_k))
-    a.J_Na_k = V_d[6]*(p.G_Na_k * (v.v_k - a.E_Na_k))
+    a.J_K_k =V_d[1]*(p.G_K_k * (v.v_k - a.E_K_k))
+    a.J_Na_k =V_d[6]*(p.G_Na_k * (v.v_k - a.E_Na_k))
     a.J_NBC_k = V_d[7]*(p.G_NBC_k * (v.v_k - a.E_NBC_k))
     a.J_KCC1_k = V_d[4]*(p.G_KCC1_k * p.ph * np.log((v.K_s * a.Cl_s) / (v.K_k * v.Cl_k)))
     a.J_NKCC1_k = V_d[3]*(p.G_NKCC1_k * p.ph * np.log((v.Na_s * v.K_s * a.Cl_s**2) / (v.Na_k * v.K_k * v.Cl_k**2)))
@@ -124,7 +124,7 @@ def set_algebraic_variables(p,u, t, idx, input_data, total_waveform, location,ch
     a.J_IP3 = V_d[9]*(p.J_max * ( v.I_k / (v.I_k + p.K_I) *  v.Ca_k / (v.Ca_k + p.K_act) * v.h_k)**3 * (1 - v.Ca_k / v.s_k))
     a.J_ER_leak = V_d[11]*(p.P_L * (1 - v.Ca_k / v.s_k))
     a.J_pump = V_d[10]*(p.V_max * v.Ca_k**2 / (v.Ca_k**2 + p.k_pump**2))
-    a.J_TRPV_k = p.G_TRPV_k * v.m_k * (v.v_k - a.E_TRPV_k)
+    a.J_TRPV_k = V_d[12]*p.G_TRPV_k * v.m_k * (v.v_k - a.E_TRPV_k)
     
     
     # Other equations
@@ -134,7 +134,7 @@ def set_algebraic_variables(p,u, t, idx, input_data, total_waveform, location,ch
     
     # Parent Calcium equations 
     a.w_inf = 0.5 * (1 + np.tanh((v.v_k + p.eet_shift * v.eet_k - a.v_3) / p.v_4))
-    a.phi_w = p.psi_w * np.cosh((v.v_k - a.v_3) / (2 * p.v_4))
+    a.phi_w = V_d[20]*p.psi_w * np.cosh((v.v_k - a.v_3) / (2 * p.v_4))
     
     # TRPV Channel open probability equations
     a.H_Ca_k = v.Ca_k / p.gam_cai_k + v.Ca_p / p.gam_cae_k
@@ -151,48 +151,48 @@ def set_algebraic_variables(p,u, t, idx, input_data, total_waveform, location,ch
     ''' SMC/EC'''
     
     # SMC fluxes
-    a.J_IP3_i = V_d[36]*(p.F_i * v.I_i**2 / (p.K_r_i**2 + v.I_i**2))           # IP3 channel
-    a.J_SR_uptake_i = V_d[37]*(p.B_i * v.Ca_i**2 / (p.c_b_i**2 + v.Ca_i**2))   # SERCA pump
-    a.J_CICR_i = V_d[38]*(p.C_i * v.s_i**2 / (p.s_c_i**2 + v.s_i**2) * v.Ca_i**4 / (p.c_c_i**4 + v.Ca_i**4))
-    a.J_extrusion_i = V_d[39]*(p.D_i * v.Ca_i * (1 + (v.v_i - p.v_d) / p.R_d_i))
-    a.J_SR_leak_i = V_d[40]*(p.L_i * v.s_i)
+    a.J_IP3_i = V_d[29]*(p.F_i * v.I_i**2 / (p.K_r_i**2 + v.I_i**2))           # IP3 channel
+    a.J_SR_uptake_i = V_d[30]*(p.B_i * v.Ca_i**2 / (p.c_b_i**2 + v.Ca_i**2))   # SERCA pump
+    a.J_CICR_i = V_d[31]*(p.C_i * v.s_i**2 / (p.s_c_i**2 + v.s_i**2) * v.Ca_i**4 / (p.c_c_i**4 + v.Ca_i**4))
+    a.J_extrusion_i = V_d[32]*(p.D_i * v.Ca_i * (1 + (v.v_i - p.v_d) / p.R_d_i))
+    a.J_SR_leak_i = V_d[33]*(p.L_i * v.s_i)
     
     ####
-    a.J_VOCC_i = V_d[41]*(p.G_Ca_i * (v.v_i - p.v_Ca1_i) / (1 + np.exp(-(v.v_i - p.v_Ca2_i) / p.R_Ca_i))) 
+    a.J_VOCC_i =V_d[27]*(p.G_Ca_i * (v.v_i - p.v_Ca1_i) / (1 + np.exp(-(v.v_i - p.v_Ca2_i) / p.R_Ca_i))) 
     ####
     
-    a.J_NaCa_i = V_d[42]*(p.G_NaCa_i * v.Ca_i / (v.Ca_i + p.c_NaCa_i) * (v.v_i - p.v_NaCa_i))
+    a.J_NaCa_i = V_d[34]*(p.G_NaCa_i * v.Ca_i / (v.Ca_i + p.c_NaCa_i) * (v.v_i - p.v_NaCa_i))
     
     a.h = 0.1 * v.R 
-    a.J_stretch_i = V_d[43]*(p.G_stretch / (1 + np.exp(-p.alpha_stretch*(p.trans_p_mmHg*v.R/a.h - p.sigma_0))) * (v.v_i - p.E_SAC))
+    a.J_stretch_i = V_d[35]*(p.G_stretch / (1 + np.exp(-p.alpha_stretch*(p.trans_p_mmHg*v.R/a.h - p.sigma_0))) * (v.v_i - p.E_SAC))
     
-    a.J_Cl_i = p.G_Cl_i * (v.v_i - p.v_Cl_i)  
-    a.J_NaK_i = p.F_NaK_i
-    a.J_K_i   = p.G_K_i * v.w_i * (v.v_i - p.v_K_i)
-    a.J_degrad_i = V_d[52]*(p.k_d_i * v.I_i)
+    a.J_Cl_i = V_d[38]*p.G_Cl_i * (v.v_i - p.v_Cl_i)  
+    a.J_NaK_i = V_d[37]*p.F_NaK_i
+    a.J_K_i   = V_d[39]*p.G_K_i * v.w_i * (v.v_i - p.v_K_i)
+    a.J_degrad_i = V_d[42]*(p.k_d_i * v.I_i)
     
     a.v_KIR_i = p.z_1 * v.K_p - p.z_2
     a.G_KIR_i = p.F_KIR_i * np.exp(p.z_5 * v.v_i + p.z_3 * v.K_p)           # Changed by including np.exp(-z_4) parameter into F_KIR_i parameter, no large constant in np.exponential equation
-    a.J_KIR_i = a.G_KIR_i * (v.v_i - a.v_KIR_i)
+    a.J_KIR_i = V_d[25]*a.G_KIR_i * (v.v_i - a.v_KIR_i)
     
     # EC fluxes
-    a.J_IP3_j = V_d[59]*(p.F_j * v.I_j**2 / (p.K_r_j**2 + v.I_j**2))
-    a.J_ER_uptake_j = V_d[60]*(p.B_j * v.Ca_j**2 / (p.c_b_j**2 + v.Ca_j**2))  
-    a.J_CICR_j = V_d[61]*(p.C_j * v.s_j**2 / (p.s_c_j**2 + v.s_j**2) * v.Ca_j**4 / (p.c_c_j**4 + v.Ca_j**4))
-    a.J_extrusion_j = V_d[62]*(p.D_j * v.Ca_j)
-    a.J_stretch_j = V_d[66]*(p.G_stretch / (1 + np.exp(-p.alpha_stretch*(p.trans_p_mmHg*v.R/a.h - p.sigma_0))) * (v.v_j - p.E_SAC))
-    a.J_ER_leak_j = V_d[63]*(p.L_j * v.s_j)
-    a.J_cation_j = V_d[64]*(p.G_cat_j * (p.E_Ca_j - v.v_j) * 0.5 * (1 + np.tanh((np.log10(v.Ca_j) - p.m_3_cat_j) / p.m_4_cat_j)))
+    a.J_IP3_j = V_d[48]*(p.F_j * v.I_j**2 / (p.K_r_j**2 + v.I_j**2))
+    a.J_ER_uptake_j = V_d[49]*(p.B_j * v.Ca_j**2 / (p.c_b_j**2 + v.Ca_j**2))  
+    a.J_CICR_j = V_d[50]*(p.C_j * v.s_j**2 / (p.s_c_j**2 + v.s_j**2) * v.Ca_j**4 / (p.c_c_j**4 + v.Ca_j**4))
+    a.J_extrusion_j = V_d[51]*(p.D_j * v.Ca_j)
+    a.J_stretch_j = V_d[55]*(p.G_stretch / (1 + np.exp(-p.alpha_stretch*(p.trans_p_mmHg*v.R/a.h - p.sigma_0))) * (v.v_j - p.E_SAC))
+    a.J_ER_leak_j = V_d[52]*(p.L_j * v.s_j)
+    a.J_cation_j = V_d[53]*(p.G_cat_j * (p.E_Ca_j - v.v_j) * 0.5 * (1 + np.tanh((np.log10(v.Ca_j) - p.m_3_cat_j) / p.m_4_cat_j)))
     a.J_BK_Ca_j = 0.2 * (1 + np.tanh( ((np.log10(v.Ca_j) - p.c) * (v.v_j - p.bb_j) - p.a_1_j) / (p.m_3b_j * (v.v_j + p.a_2_j*(np.log10(v.Ca_j) - p.c) - p.bb_j)**2 + p.m_4b_j)))
     a.J_SK_Ca_j = 0.3 * (1 + np.tanh((np.log10(v.Ca_j) - p.m_3s_j) / p.m_4s_j))
     a.J_K_j = p.G_tot_j * (v.v_j - p.v_K_j) * (a.J_BK_Ca_j + a.J_SK_Ca_j)
     a.J_R_j = p.G_R_j * (v.v_j - p.v_rest_j)
-    a.J_degrad_j = V_d[70]*(p.k_d_j * v.I_j)
+    a.J_degrad_j = V_d[59]*(p.k_d_j * v.I_j)
     
     # Coupling
-    a.V_coup_i = V_d[49]*(-p.G_coup * (v.v_i - v.v_j))
-    a.J_IP3_coup_i = V_d[53]*(-p.P_IP3 * (v.I_i - v.I_j))
-    a.J_Ca_coup_i = V_d[44]*(-p.P_Ca * (v.Ca_i - v.Ca_j))
+    a.V_coup_i = V_d[40]*(-p.G_coup * (v.v_i - v.v_j))
+    a.J_IP3_coup_i = V_d[43]*(-p.P_IP3 * (v.I_i - v.I_j))
+    a.J_Ca_coup_i = V_d[36]*(-p.P_Ca * (v.Ca_i - v.Ca_j))
     
     a.c_w_i = 1/2 * (1 + np.tanh((v.cGMP_i - 10.75)/0.668) )
     a.K_act_i = (v.Ca_i + a.c_w_i)**2 / ((v.Ca_i + a.c_w_i)**2 + p.alpha_act_i * np.exp(-(v.v_i - p.v_Ca3_i - p.Hshift*(v.H_i-p.H0)) / p.R_K_i)) # Is shifted by 20-HETE ******** 

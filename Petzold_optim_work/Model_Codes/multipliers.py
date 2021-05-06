@@ -20,7 +20,7 @@ V_IC = np.ones(51)
 #df = pd.DataFrame(data).astype('float_')
 #V_IC = df.values.flatten()
 def V_d_function(change_index):
-    V_d = np.ones(70+1)
+    V_d = np.ones(59+1)
     V_d[change_index]=0
     return V_d
 

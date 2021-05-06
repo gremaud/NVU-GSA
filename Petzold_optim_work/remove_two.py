@@ -16,10 +16,10 @@ values='Robin_Pre2'
 model='pre'
 
 norm_flag=2
-v_a_flag='a_error'
+v_a_flag='v'
 
 #list_of_low_reactions=[34,35,68,29,4,32,63,11,26,31,13,48,8,27,18,28,49,30,65]
-list_of_low_reactions=range(1,70+1)
+list_of_low_reactions=range(1,59+1)
 numpairs=int((len(list_of_low_reactions)*len(list_of_low_reactions)-1)/2)
 
 v_nominal, a_nominal, time =single_eval(values,model,[])

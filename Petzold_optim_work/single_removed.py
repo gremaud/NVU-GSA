@@ -16,7 +16,7 @@ values='Robin_Pre2'
 model='pre'
 
 norm_flag=2
-v_a_flag='v'
+v_a_flag='a_error'
 
 v_nominal, a_nominal, time =single_eval(values,model,[])
 v=[]
@@ -24,12 +24,12 @@ a=[]
 
 
 if v_a_flag =='v':
-    for i in range(70+1):
+    for i in range(59+1):
         v_temp, a_temp, time =single_eval(values,model,i)
         v.append(v_temp)
-        difference=np.zeros([70+1,2])
+        difference=np.zeros([59+1,2])
     
-    for i in range(70+1):
+    for i in range(59+1):
         check=compare_results_v(v[i],v[i],norm_flag)
         if check[0] :
             print('%i failed' % i)
@@ -43,13 +43,13 @@ if v_a_flag =='v':
                 
 
 if v_a_flag=='a_diff':
-    for i in range(70+1):
+    for i in range(59+1):
         v_temp, a_temp, time =single_eval(values,model,i)
         a.append(a_temp)        
     
     
-    results=np.zeros([70+1,2])
-    for i in range(70+1):
+    results=np.zeros([59+1,2])
+    for i in range(59+1):
         check=compare_results_a(a[i],a[i],norm_flag)
         if check[0] :
              print('%i failed' % i)
@@ -65,8 +65,8 @@ if v_a_flag == 'a_error':
         dataset = 'tots_LNAME_pre'
      
     Data = im.import_Berwick_HET_LNAME_Data(dataset, area='Whisker')
-    results=np.zeros([70+1,2])
-    for i in range(70+1):    
+    results=np.zeros([59+1,2])
+    for i in range(59+1):    
         v_temp, a_temp, time =single_eval(values,model,i)
         check=compare_results_a(a_temp,a_temp,norm_flag)
         if check[0] :

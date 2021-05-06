@@ -282,7 +282,7 @@ def p_function(iteration,switch,change_index):
     
     # Switches to turn on and off some things
     p.rhoSwitch = 1 
-    p.trpv_switch = 1 
+    p.trpv_switch = V_d[22]*1 
     
     p.rho_min = 0.1 * V_c[58]      
     p.rho_max = 0.7 * V_c[59]   
@@ -306,13 +306,13 @@ def p_function(iteration,switch,change_index):
     p.J_max = 2880e-3 * V_c[98]                                  # [uM ms**-1] 
     p.K_I = 0.03 * V_c[79] # uM
     p.K_act = 0.17 * V_c[99] # original avlue 0.17uM
-    p.k_on = 2e-3 * V_c[71] #8e-3                                      # [uM ms**-1]  previously 2e-3
+    p.k_on = V_d[21]*2e-3 * V_c[71] #8e-3                                      # [uM ms**-1]  previously 2e-3
     p.K_inh = 0.1 * V_c[72] #uM
     
     p.r_h = 4.8e-3 * V_c[73]                                     # [uM/ms] *****
-    p.k_deg = 1.25e-3 * V_c[74]                                  # [ms**-1]
-    p.V_eet = 72e-3 * V_c[75]                                    # [ms**-1]
-    p.k_eet = 7.2e-3 * V_c[76]                                   # [ms**-1]
+    p.k_deg = V_d[15]*1.25e-3 * V_c[74]                                  # [ms**-1]
+    p.V_eet = V_d[16]*72e-3 * V_c[75]                                    # [ms**-1]
+    p.k_eet = V_d[17]*7.2e-3 * V_c[76]                                   # [ms**-1]
     p.Ca_k_min = 0.1 * V_c[77] # uM
     p.eet_shift = 2 * V_c[78] #mV/uM
     
@@ -330,7 +330,7 @@ def p_function(iteration,switch,change_index):
     p.v1_TRPV_k = 120 * V_c[86] #mV
     p.v2_TRPV_k = 13 * V_c[87] #mV
     p.t_TRPV_k = 0.9e3 * V_c[88]                                 # [ms] 
-    p.Ca_decay_k = 0.5e-3 * V_c[89]                              # [ms**-1]
+    p.Ca_decay_k = V_d[28]*0.5e-3 * V_c[89]                              # [ms**-1]
     p.G_TRPV_k = 3.15e-7 * V_c[90]                               # [ms**-1]
     p.r_buff = 0.05 * V_c[91] # Rate at which Ca2+ from the TRPV4 channel at the foot is buffered compared to rest of channels on the astrocyte body [-]
     
@@ -338,7 +338,7 @@ def p_function(iteration,switch,change_index):
     p.VR_pa = 0.001 * V_c[92] # [-]
     p.VR_ps = 0.001 * V_c[93] # [-]
     p.K_p_min = 3e3 * V_c[95] # uM
-    p.R_decay = 0.15e-3 * V_c[94]                           # [ms**-1]  0.15e-3   ***0.15e-3*3
+    p.R_decay = V_d[26]*0.15e-3 * V_c[94]                           # [ms**-1]  0.15e-3   ***0.15e-3*3
     
     # Fluxes Constants
     p.R_g = 8.315 #J mol**-1 K**-1 Gas constant
@@ -368,12 +368,12 @@ def p_function(iteration,switch,change_index):
     
     # Smooth Muscle Cell ODE Constants
     p.gamma_i = 1970 #mV uM**-1
-    p.lambda_i = 45e-3 * V_c[111]                                 # [ms**-1]
+    p.lambda_i = V_d[41]*45e-3 * V_c[111]                                 # [ms**-1]
     
     # Endothelial Cell ODE Constants
     p.C_m_j = 25.8 * V_c[112]                                     # pF veranderen naar iets met ms??
-    p.J_PLC = 0.11e-3 * V_c[113]                                 #0.11 for steady state, 0.3 for oscillations # [uM ms**-1] 
-    p.J_0_j = 0.029e-3 * V_c[114]                                 # [uM ms**-1] constant Ca influx (EC)
+    p.J_PLC = V_d[58]*0.11e-3 * V_c[113]                                 #0.11 for steady state, 0.3 for oscillations # [uM ms**-1] 
+    p.J_0_j = V_d[54]*0.029e-3 * V_c[114]                                 # [uM ms**-1] constant Ca influx (EC)
     
     # Smooth Muscle Cell Flux Constants
     p.F_i = 0.23e-3 * V_c[115]                                    # [uM ms**-1]      # IP3/RYR channel strength
@@ -433,7 +433,7 @@ def p_function(iteration,switch,change_index):
     
     p.L_j = 0.025e-3 * V_c[153]                                   # [ms**-1] 
     
-    p.G_cat_j = 6.6e-7 * V_c[154]                                 # [uM mV**-1 ms**-1]
+    p.G_cat_j = V_d[56]*6.6e-7 * V_c[154]                                 # [uM mV**-1 ms**-1]
     p.E_Ca_j = 50 * V_c[155] #mV
     p.m_3_cat_j = -0.18 * V_c[156] 
     p.m_4_cat_j = 0.37 * V_c[157] 
@@ -450,7 +450,7 @@ def p_function(iteration,switch,change_index):
     p.m_3s_j = -0.28 * V_c[166]
     p.m_4s_j = 0.389 * V_c[167] 
     
-    p.G_R_j = 955e9 * V_c[168] #e9                                    # [mpS] = [ ] --> WRONG?
+    p.G_R_j = V_d[57]*955e9 * V_c[168] #e9                                    # [mpS] = [ ] --> WRONG?
     p.v_rest_j = -31.1 * V_c[169] #mV
     p.k_d_j = 0.1e-3 * V_c[170]                                   # [ms**-1]
     
@@ -517,21 +517,21 @@ def p_function(iteration,switch,change_index):
     
     ''' 20-HETE parameters ''' #*** we should probably adjust these so 20-HETE doesn't have such a huge effect
     
-    p.AA_max = 29 * V_c[220]  # uM
+    p.AA_max = V_d[24]*29 * V_c[220]  # uM
     p.AA_m = 0.161 * V_c[221]  # uM
     p.Ca0 = 0.1432 * V_c[222]  # uM
     p.D_AA = .033 * V_c[223] #.5*.033    # um**2/ms, model estimate
-    p.tau_AA = (p.x_ki ** 2 /  (2 * p.D_AA)) * V_c[224] # Time constant for AA diffusion between astrocyte and SMC
+    p.tau_AA = (V_d[23]==0)*(p.x_ki**5/  ( p.D_AA))**2 + (V_d[23]==1)*(p.x_ki ** 2 /  (2 * p.D_AA)) * V_c[224] # Time constant for AA diffusion between astrocyte and SMC
     
-    p.V_a = 0.212e-2 * V_c[225]  # ms**-1  old value 0.212e-3
+    p.V_a = V_d[45]*0.212e-2 * V_c[225]  # ms**-1  old value 0.212e-3
     p.K_a = 228.2 * V_c[226]  # uM
-    p.V_f = 0.0319e-2 * V_c[227]  # ms**-1 old value 0.0319e-3
+    p.V_f = V_d[46]*0.0319e-2 * V_c[227]  # ms**-1 old value 0.0319e-3
     p.K_f = 23.5 * V_c[228]  # uM
-    p.lambda_h = 2.0e-3 * V_c[229]   # ms**-1  old value 0.139e-3
+    p.lambda_h = V_d[47]*2.0e-3 * V_c[229]   # ms**-1  old value 0.139e-3
     p.Hshift = 30 * V_c[230]  #10
     p.H0 = 0.126 * V_c[231] #0.068   # 0.126 was wrong baseline value before, must have changed when other parameters changed
     
-    p.NO_rest = 0.02047 * V_c[232]
+    p.NO_rest = (V_d[44]==0)*-500  + (V_d[44]==1)*0.02047 * V_c[232]
     p.R_NO = 0.02 * V_c[233]
     
     ### old param
