@@ -1,0 +1,129 @@
+\RequirePackage{fix-cm}
+\documentclass[smallextended]{svjour3}  
+\smartqed
+
+\usepackage{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage{epsfig}
+\usepackage{latexsym, amsmath, xcolor, graphicx, amssymb, color,hyperref,booktabs,mathrsfs,placeins}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage[sort,nocompress]{cite}
+\topmargin-.5in
+\textwidth6.6in
+\textheight9in
+\oddsidemargin0in
+\def\ds{\displaystyle}
+\def\d{\partial}
+\def\bH{{\bf H}}
+\def\bM{{\bf M}}
+\def\bB{{\bf B}}
+\def\bm{{\bf m}}
+\def\bS{{\bf S}}
+\def\ve{{\varepsilon}}
+%\def\fs{\scriptsize}
+\def\fs{\footnotesize}
+\def\reals{\mathbb{R}}
+\def\complex{\mathbb{C}}
+\def\scriptO{{{\it O}\kern -.42em {\it `}\kern + .20em}}
+\newcommand{\tim}[1]{\textcolor{red}{\textbf{#1}}} % Tim's comments
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\sodpot}{Na$^+$/K$^+$\xspace}
+%\newcommand{\jplc}{J$_{\text{\scriptsize PLC}}$\xspace}
+\newcommand{\hco}{HCO$_3^-$\xspace}
+\newcommand{\ox}{O$_2$\xspace}
+\newcommand{\ums}{$\mu$m s$^{-1}$\xspace}
+\newcommand{\mus}{$\mu$M s$^{-1}$\xspace}
+\newcommand{\Cmol}{C mol$^{-1}$\xspace}
+\newcommand{\JmolK}{J mol$^{-1}$ K$^{-1}$\xspace}
+\newcommand{\perOhmm}{$\Omega^{-1}$\xspace}
+\newcommand{\uM}{$\mu$M\xspace}
+\newcommand{\um}{$\mu$m\xspace}
+\newcommand{\na}{$Na^+$}
+\newcommand{\pot}{$K^+$}
+\newcommand{\cl}{$Cl^{-1}$}
+\newcommand{\ca}{$Ca^{2+}$}
+\newcommand{\ip}{$IP_3$}
+\newcommand{\mAcm}{mA cm$^{-2}$\xspace}
+\newcommand{\n}{$^{-1}$\xspace}
+\newcommand{\psec}{s$^{-1}$\xspace}
+\newcommand{\ee}[1]{\times 10^{#1}}
+\newcommand{\nn}{$^{-2}$\xspace}
+\newcommand{\thet}{$\theta$\xspace}
+\newcommand{\tthet}{$\tilde{\theta}$\xspace}
+%\newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+%\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\}
+
+\newcommand{\jplc}{$J_{PLC}$\xspace}
+\newcommand{\repeatcaption}[2]{%
+	\renewcommand{\thefigure}{\ref{#1}}%
+	\caption{#2 (repeated from page \pageref{#1})}%
+}
+
+\def\ns{\vspace{-.06truein}}
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+\usepackage{todonotes}
+\newcommand{\td}[1]{\todo[inline, size=\normalsize]{#1}}
+
+\begin{document}
+
+\listoftodos
+	
+\title{TITLE}
+
+
+\author{AUTHORS} 
+
+\
+\institute{
+		R.M.P. Morillo \at
+		Department of Mathematics, North Carolina State University, Raleigh, NC, USA, E-mail: rmmorill@ncsu.edu
+		\and
+		P.A. Gremaud \at
+		Department of Mathematics and Graduate School, North Carolina State University, Raleigh, NC, USA, E-mail: gremaud@ncsu.edu
+		\and
+		T. David \at
+		Department of Mechanical Engineering, University of Canterbury, New Zealand, E-mail: tim.david@canterbury.ac.nz}
+	
+\date{Received: date / Accepted: date}
+% The correct dates will be entered by the editor
+	
+\maketitle
+	
+	
+\begin{abstract} 
+		\td{Abstract}
+\keywords{KEYWORD \and KEYWORD}
+	
+\end{abstract}	
+
+\section{Introduction}
+\subsection{GSA}
+	\td{Introduce GSA for model reduction/simplification in general}
+\subsection{TITLE}
+	\td{Talk about parameter based approaches (cite previous papers)}
+\subsection{TITLE}
+	\td{Talk about Petzold work}
+
+\section{Generalization of Petzold's Work}
+	\td{Talk about what types of models this applies to}
+	\td{Re-derive/show Petzold work?}
+	\td{Show our generalization}
+	
+\section{Example Applications}
+\subsection{``Baby'' Examples}
+	\td{Find ``baby example'' that is easy to understand how everything works}
+	\td{Find ``baby example'' that shows example of our method working better than the parameter method (possibly same one as before)}
+\subsection{NVU Model}
+	\td{Talk about NVU model}
+	\td{Show parameter results}
+	\td{Show ``petzold'' results}
+
+\section{Conclusion}
+	\td{Conclusion}
+
+\section{Acknowledgments}
+
+\bibliographystyle{spmpsci}
+\bibliography{}
+\end{document}
