@@ -1,4 +1,4 @@
-function [A,x0,list_of_inside,list_of_outside] = Generate_system(N_list,Int_min,Int_max,Num_connections,Max_population)
+function [A,x0,list_of_inside,list_of_outside] = Generate_system(N_list,Inside_min,Inside_max,Outside_min,Outside_max,Num_connections,Max_population)
     list_of_inside={};
     list_of_outside={};
 
@@ -7,7 +7,7 @@ function [A,x0,list_of_inside,list_of_outside] = Generate_system(N_list,Int_min,
     A=zeros(N_total,N_total);
     for N_iter=1:length(N_list)
         N=N_list(N_iter);
-        sub_A=Int_min+(Int_max-Int_min)*rand(N,N);
+        sub_A=Inside_min+(Inside_max-Inside_min)*rand(N,N);
         for i=1:N
             sub_A(i,i)=0;
             for j=i+1:N
@@ -36,9 +36,9 @@ function [A,x0,list_of_inside,list_of_outside] = Generate_system(N_list,Int_min,
 
         N1=randi([1,N_list(sub_1)])+sum(N_list(1:sub_1-1));
         N2=randi([1,N_list(sub_2)])+sum(N_list(1:sub_2-1));
-        value=rand;
+        value=Outside_min+(Outside_max-Outside_min)*rand;
         while value==0
-            value=rand;
+            value=Outside_min+(Outside_max-Outside_min)*rand;
         end
         A(N1,N2)=value;
         A(N2,N1)=-value;

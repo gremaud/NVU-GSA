@@ -3,11 +3,11 @@ close all
 clear
 
 %Initialize varriables
-N_list=[4,8,16];
-Inside_min=-10;
-Inside_max=10;
-Outside_min=1;
-Outside_max=2;
+N_list=[4,8,16,32];
+Inside_min=-20;
+Inside_max=20;
+Outside_min=-5;
+Outside_max=5;
 Num_connections=10;
 Max_population=1;
 tspan=0:.1:10;
@@ -108,7 +108,7 @@ tic
 mirror_flag=true; %should (y,x) be paired with (x,y)
 dist_width=0.1;
 
-N_Sobol=2e5;
+N_Sobol=2e1;
 
 
 num_params=Num_parameters_inside+Num_parameters_outside;
