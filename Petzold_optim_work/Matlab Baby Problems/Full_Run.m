@@ -4,10 +4,10 @@ clear
 
 %Initialize varriables
 N_list=[4,8,16];
-Inside_min=-10;
-Inside_max=10;
-Outside_min=1;
-Outside_max=2;
+Inside_min=-50;
+Inside_max=50;
+Outside_min=10;
+Outside_max=20;
 Num_connections=10;
 Max_population=1;
 tspan=0:.1:10;
