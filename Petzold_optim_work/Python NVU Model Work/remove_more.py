@@ -18,10 +18,12 @@ model='pre'
 
 norm_flag=2
 v_a_flag='v'
-num_removed=3
 
-list_of_low_reactions=range(1,59+1)
-combos = list(combinations(list_of_low_reactions, num_removed))
+num_removed=2
+list_of_all_reactions=range(1,59+1)
+combos = list(combinations(list_of_all_reactions, num_removed))
+
+
 numpairs=len(combos)
 
 v_nominal, a_nominal, time =single_eval(values,model,[])

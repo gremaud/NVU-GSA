@@ -3,7 +3,7 @@ from single_evaluation_plotting import single_eval_with_plot
 values='Robin_Pre2'
 model='pre'
 
-list_to_plot=range(34,59+1)
+list_to_plot=range(1,59+1)
 
 
 
@@ -13,7 +13,7 @@ for i in range(len(list_to_plot)):
         single_eval_with_plot(values,model,removed)
         print(removed)
         
-list_to_plot=range(1,59+1)
+list_to_plot=range(59+1)
 for i in range(len(list_to_plot)):
         removed=list_to_plot[i]
         single_eval_with_plot(values,model,removed)
