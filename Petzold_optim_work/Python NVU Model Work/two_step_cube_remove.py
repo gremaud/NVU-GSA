@@ -98,6 +98,7 @@ QoIs_for_ST2=[element for element in QoIs_for_ST[:,2] if element>=0]
 combos_for_ST=[element for element in combos_for_ST if not(isinstance(element,float))]
         
 ST=np.zeros([len(list_of_low_reactions),3])
+Var_Total=np.zeros(3)
 for ii in range(3):
     if ii==0:
         QoIs_temp=QoIs_for_ST0
@@ -106,7 +107,7 @@ for ii in range(3):
     elif ii==2:
         QoIs_temp=QoIs_for_ST2
     mu_Total=stats.mean(QoIs_temp)
-    Var_Total=stats.variance(QoIs_temp)
+    Var_Total[ii]=stats.variance(QoIs_temp)
     for ST_index in range(len(list_of_low_reactions)):
         ST[ST_index,ii]=0
         temp_combos=list()
@@ -125,7 +126,7 @@ for ii in range(3):
             temp_sum[j]=stats.mean([(QoIs_temp[combos_for_ST.index(temp1)] if temp1 in combos_for_ST else 0),(QoIs_temp[combos_for_ST.index(temp0)] if temp0 in combos_for_ST else 0)])**2
     
     
-        ST[ST_index,ii]=1-(stats.mean(temp_sum)-mu_Total**2)/Var_Total
+        ST[ST_index,ii]=1-(stats.mean(temp_sum)-mu_Total**2)/Var_Total[ii]
     
     
 print(list_of_low_reactions)
