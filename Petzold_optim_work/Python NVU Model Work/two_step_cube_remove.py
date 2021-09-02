@@ -6,7 +6,7 @@ import import_mat_files_no_fig as im
 
 from test_switch_functions import compare_results_v
 from test_switch_functions import compare_results_a
-    
+from test_switch_functions import compare_results_function_classes
     
 import math
 import numpy as np
@@ -25,7 +25,7 @@ outer_norm_flag=np.inf
 combos=list()
 #list_of_low_reactions=[5,8,10,15,24,27,30] #Cube 2
 #list_of_low_reactions=[4,10,11,12,13,15,17,18,19,22,52,54] # Cube 1
-list_of_low_reactions=[5,8,10,15]
+list_of_low_reactions=[5,8,10,15,24]
 
 
 n = len(list_of_low_reactions)                       
@@ -76,7 +76,7 @@ for i in range(numpairs):
     QoIs[i,1]=Error_HBO
     QoIs[i,2]=Error_HBR
     
-    results_v[i,:]=compare_results_v(v_nominal,v_temp,inner_norm_flag)
+    results_v[i,:]=compare_results_function_classes(v_nominal,v_temp)
     if min(results_v[i,:])<0:
         error_num=min(results_v[i,:])
         QoIs[i,0]=error_num

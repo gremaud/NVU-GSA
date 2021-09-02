@@ -136,7 +136,11 @@ def single_function_class_comparisson(nominal,adjusted):
     XYcov=(X-Xmean) * (Y-Ymean)
     Xvar= (X-Xmean)**2
     
-    A=XYcov.sum() / Xvar.sum()
+    if Xvar.sum()==0:
+        A=0
+    else:
+        A=XYcov.sum() / Xvar.sum()
+    
     B=Ymean- (A * Xmean)
     
     Ypred= [A * elem + B for elem in X]
