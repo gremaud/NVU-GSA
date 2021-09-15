@@ -6,6 +6,7 @@ import import_mat_files_no_fig as im
 
 from test_switch_functions import compare_results_v
 from test_switch_functions import compare_results_a
+from test_switch_functions import compare_results_sobolev
     
     
 import math
@@ -16,7 +17,7 @@ values='Robin_Pre2'
 model='pre'
 
 norm_flag=2
-v_a_flag='v'
+v_a_flag='sobolev'
 
 v_nominal, a_nominal, time =single_eval(values,model,[])
 v=[]
@@ -70,7 +71,34 @@ if v_a_flag == 'a_error':
         results[i,0]=Error_HBO
         results[i,1]=Error_HBR
 
-
+if v_a_flag =='sobolev':
+    for i in range(59+1):
+        v_temp, a_temp, time =single_eval(values,model,i)
+        v.append(v_temp)
+        sobolev_norm=np.zeros([59+1,51])
+        #A=np.zeros([59+1,51])
+        #B=np.zeros([59+1,51])
+    
+    for i in range(59+1):
+        print('%i done' % i)
+        #[difference[i,:],A[i,:],B[i,:]]=compare_results_function_classes(v_nominal,v[i])
+        sobolev_norm[i,:]=compare_results_sobolev(v_nominal,v[i])
+        
+    sobolev_norm_R=sobolev_norm[:,50]
+    sobolev_norm_HBR=sobolev_norm[:,7]
+    sobolev_norm_Ca_i=sobolev_norm[:,30]
+    
+    results_all=np.sum(sobolev_norm,1)
+    results_3=sobolev_norm_R+sobolev_norm_HBR+sobolev_norm_Ca_i
+    
+    for i in range(59+1):
+        if results_all[i]<0:
+            results_all[i]=results_all[i]/51
+        if results_3[i]<0:
+            results_3[i]=results_3[i]/3
+        
+        
+        
             
 print('done')
 

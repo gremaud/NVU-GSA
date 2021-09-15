@@ -6,7 +6,7 @@ import import_mat_files_no_fig as im
 
 from test_switch_functions import compare_results_v
 from test_switch_functions import compare_results_a
-from test_switch_functions import compare_results_function_classes
+from test_switch_functions import compare_results_sobolev
     
 import math
 import numpy as np
@@ -25,8 +25,7 @@ outer_norm_flag=np.inf
 combos=list()
 #list_of_low_reactions=[5,8,10,15,24,27,30] #Cube 2
 #list_of_low_reactions=[4,10,11,12,13,15,17,18,19,22,52,54] # Cube 1
-list_of_low_reactions=[5,8,10,15,24]
-
+list_of_low_reactions=[34,42,1,2,8,28,33,37,59]
 
 n = len(list_of_low_reactions)                       
 for i in range(2**n):
@@ -46,6 +45,9 @@ Data = im.import_Berwick_HET_LNAME_Data(dataset, area='Whisker')
 
 results_v=np.zeros([numpairs,51])
 QoIs=np.zeros([numpairs,3])
+sobolev_norm_R=np.zeros([numpairs,1])
+sobolev_norm_HBR=np.zeros([numpairs,1])
+sobolev_norm_Ca_i=np.zeros([numpairs,1])
 
 list_removed=list()
 for i in range(numpairs):
@@ -76,7 +78,7 @@ for i in range(numpairs):
     QoIs[i,1]=Error_HBO
     QoIs[i,2]=Error_HBR
     
-    results_v[i,:]=compare_results_function_classes(v_nominal,v_temp)
+    results_v[i,:]=compare_results_sobolev(v_nominal,v_temp)
     if min(results_v[i,:])<0:
         error_num=min(results_v[i,:])
         QoIs[i,0]=error_num
@@ -85,7 +87,10 @@ for i in range(numpairs):
         QoIs[i,1]=error_num
         QoIs[i,2]=error_num
     else:
-        QoIs[i,0]=np.linalg.norm(results_v[i,:],outer_norm_flag)
+        sobolev_norm_HBR[i]=results_v[i,7]
+        sobolev_norm_Ca_i[i]=results_v[i,30]
+        sobolev_norm_R[i]=results_v[i,50]
+        QoIs[i,0]=sobolev_norm_R[i]+sobolev_norm_HBR[i]+sobolev_norm_Ca_i[i]
        
 
 
