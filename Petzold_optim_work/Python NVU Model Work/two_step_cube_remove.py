@@ -7,6 +7,7 @@ import import_mat_files_no_fig as im
 from test_switch_functions import compare_results_v
 from test_switch_functions import compare_results_a
 from test_switch_functions import compare_results_sobolev
+from discrete_sobol_with_holes import discrete_sobol_holes_even_probability as sobol
     
 import math
 import numpy as np
@@ -25,7 +26,10 @@ outer_norm_flag=np.inf
 combos=list()
 #list_of_low_reactions=[5,8,10,15,24,27,30] #Cube 2
 #list_of_low_reactions=[4,10,11,12,13,15,17,18,19,22,52,54] # Cube 1
-list_of_low_reactions=[34,42,1,2,8,28,33,37,59]
+list_of_low_reactions=[59,58,48,42,4,11]
+
+
+
 
 n = len(list_of_low_reactions)                       
 for i in range(2**n):
@@ -35,7 +39,7 @@ for i in range(2**n):
     combos.append(b)
 
 numpairs=len(combos)
-combos_for_ST=combos;
+combos_for_ST=combos.copy();
 
 v_nominal, a_nominal, time =single_eval(values,model,[])
 if model == 'pre':
@@ -101,40 +105,18 @@ QoIs_for_ST0=[element for element in QoIs_for_ST[:,0] if element>=0]
 QoIs_for_ST1=[element for element in QoIs_for_ST[:,1] if element>=0]
 QoIs_for_ST2=[element for element in QoIs_for_ST[:,2] if element>=0]
 combos_for_ST=[element for element in combos_for_ST if not(isinstance(element,float))]
-        
+
 ST=np.zeros([len(list_of_low_reactions),3])
-Var_Total=np.zeros(3)
-for ii in range(3):
-    if ii==0:
-        QoIs_temp=QoIs_for_ST0
-    elif ii==1:
-        QoIs_temp=QoIs_for_ST1
-    elif ii==2:
-        QoIs_temp=QoIs_for_ST2
-    mu_Total=stats.mean(QoIs_temp)
-    Var_Total[ii]=stats.variance(QoIs_temp)
-    for ST_index in range(len(list_of_low_reactions)):
-        ST[ST_index,ii]=0
-        temp_combos=list()
-        n = len(list_of_low_reactions)-1
-        for i in range(2**(n)):
-            b = bin(i)[2:]
-            l = len(b)
-            b = str(0) * (n - l) + b
-            temp_combos.append(b)
-        
-        temp_sum=np.zeros(len(temp_combos))
-        for j in range(len(temp_combos)):
-            other_digits=temp_combos[j]
-            temp1=other_digits[:ST_index] + "1" + other_digits[ST_index:]
-            temp0=other_digits[:ST_index] + "0" + other_digits[ST_index:]
-            temp_sum[j]=stats.mean([(QoIs_temp[combos_for_ST.index(temp1)] if temp1 in combos_for_ST else 0),(QoIs_temp[combos_for_ST.index(temp0)] if temp0 in combos_for_ST else 0)])**2
-    
-    
-        ST[ST_index,ii]=1-(stats.mean(temp_sum)-mu_Total**2)/Var_Total[ii]
-    
+
+tempS, tempST = sobol(combos,combos_for_ST,QoIs_for_ST0)
+ST[:,0]=tempST
+tempS, tempST = sobol(combos,combos_for_ST,QoIs_for_ST1)
+ST[:,1]=tempST
+tempS, tempST = sobol(combos,combos_for_ST,QoIs_for_ST2)
+ST[:,2]=tempST
     
 print(list_of_low_reactions)
+print('Out of ' ,len(combos), ' combinations, ', len(combos_for_ST), ' did not have errors;', len(combos_for_ST)/len(combos)*100,'%')
 print(ST[:,0])  
 print(ST[:,1])
 print(ST[:,2])      
