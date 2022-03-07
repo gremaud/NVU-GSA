@@ -19,7 +19,8 @@ from numpy.linalg import norm
 
 ## Tim these three lines are the ones to edit
 
-reactions_to_remove=[59,58,48,43,42] # reactions to be removed as a list
+#reactions_to_remove=[59, 58, 48, 42, 4, 11, 13] # reactions to be removed as a list
+reactions_to_remove=[0]
 xlim1 = -1  #limits for x values in graph
 xlim2 = 20
 

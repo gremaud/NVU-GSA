@@ -26,7 +26,9 @@ outer_norm_flag=np.inf
 combos=list()
 #list_of_low_reactions=[5,8,10,15,24,27,30] #Cube 2
 #list_of_low_reactions=[4,10,11,12,13,15,17,18,19,22,52,54] # Cube 1
-list_of_low_reactions=[59,58,48,42,4,11]
+#list_of_low_reactions=[59,58,48,42,4,11]
+
+list_of_low_reactions=[5,8,10]
 
 
 

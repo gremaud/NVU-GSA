@@ -28,7 +28,8 @@ from multipliers import V_IC
 
 
 
-iteration='Robin_Pre2'
+#iteration='Robin_Pre2'
+iteration='LNAME'
 data_choice='pre'
 change_index=0
 
