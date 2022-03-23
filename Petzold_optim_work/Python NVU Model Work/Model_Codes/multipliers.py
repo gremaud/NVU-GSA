@@ -51,7 +51,7 @@ def V_c_function(optimisation_type):
         for i in range(len(locations_matlab)):
             V_c[locations_matlab[i]-1]=V_c[locations_matlab[i]-1]*temp_values[i]
         
-    elif optimisation_type == 'Robin_Pre2':
+    elif optimisation_type == 'Robin_Pre2' or optimisation_type == 'LNAME':
         
         locations_matlab=[182, 179, 58, 13, 53, 69, 180, 97, 63, 137, 172,129, 192, 135, 150, 28, 78, 7, 74]
         data=pd.read_csv('./Samples/pre_round1_optim_results.csv', usecols = [0],names=['name'])
@@ -138,13 +138,7 @@ def V_c_function(optimisation_type):
         temp_values = df.values.flatten()
         for i in range(len(locations_matlab)):
             V_c[locations_matlab[i]-1]=V_c[locations_matlab[i]-1]*temp_values[i]
-            
-        locations_matlab=[53,58,57,178,179,69,120,63,159]
-        data=pd.read_csv('./Samples/post_round1_optim_results.csv', usecols = [0],names=['name'])
-        df = pd.DataFrame(data)
-        temp_values = df.values.flatten()
-        for i in range(len(locations_matlab)):
-            V_c[locations_matlab[i]-1]=V_c[locations_matlab[i]-1]*temp_values[i]     
+                
         
         
         locations_matlab=[180, 179, 63, 182, 58, 53, 212, 178, 69, 61, 67, 143, 70, 144, 102, 137, 56]
